@@ -1,0 +1,9 @@
+Cet espace contient tout le contenu du site de réservation du Gala.
+
+== Déploiement ==
+
+Comme tous les projets Symfony, ce site doit être déployé de manière particulière :
+ * Avec un Alias qui pointe sur ./web/
+ * Avec un VirtualHost dont le DocumentRoot est ./web/
+
+Il est impératif de ne pas rendre accessible aux utilisateurs les autres dossiers.
