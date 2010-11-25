@@ -13,7 +13,8 @@ Reservation:
         - especes
         - cheque
     banque_nom: string(30)
-    done_at: timestamp
+    validated_at: timestamp
+    payed_at: timestamp    
   relations:
     Produits:
       class: Produit

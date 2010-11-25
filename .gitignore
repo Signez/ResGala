@@ -1,2 +1,3 @@
-data/*
+data/sql/*
+data/testsdata.db
 cache/*

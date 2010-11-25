@@ -1,16 +1,35 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
+start_reserv:
+  url: /reservation/identity
+  param: { module: reswizard, action: start }
+
+identity_save:
+  url: /reservation/identity/save
+  param: { module: reswizard, action: saveStart }
+
+commande:
+  url: /reservation/commande
+  param: { module: reswizard, action: commande }
+
+commande_save:
+  url: /reservation/commande/save
+  param: { module: reswizard, action: saveCommande }
+
+validate:
+  url: /reservation/validate
+  param: { module: reswizard, action: validate }
+
+validate_save:
+  url: /reservation/validate/save
+  param: { module: reswizard, action: saveValidate }
+
+resa_done:
+  url: /reservation/done
+  param: { module: reswizard, action: done }
+
 # default rules
 homepage:
   url:   /
-  param: { module: default, action: index }
-
-# generic rules
-# please, remove them by adding more specific rules
-default_index:
-  url:   /:module
-  param: { action: index }
-
-default:
-  url:   /:module/:action/*
+  param: { module: accueil, action: index }

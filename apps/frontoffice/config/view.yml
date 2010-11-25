@@ -6,7 +6,7 @@ default:
     content-type: text/html
 
   metas:
-    #title:        symfony project
+    title:        Plateforme de réservation du Gala XV de l'INSA de Lyon
     #description:  symfony project
     #keywords:     symfony, project
     #language:     en

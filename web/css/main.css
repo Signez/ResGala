@@ -1,0 +1,191 @@
+body {
+  background-color: black;
+  background-image: url(../images/fond.png);
+  font-family: "Ubuntu","Trebuchet MS","Lucida Grande",Helvetica,sans-serif;
+  font-size: 10pt;
+}
+
+.allwrap {
+  max-width: 960px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.logowrap {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+h1, h2 {
+  margin: 0px;
+  padding: 0px;
+  line-height: 1.2em;
+  font-weight: normal;
+  font-size: 24pt;
+}
+
+h2 {
+  margin-top: 5px;
+  font-size: 16pt;
+}
+
+h3 {
+  font-size: 18pt;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-weight: normal;
+  color: #FF5400;
+}
+
+.mainwrap {
+  min-height: 200px;
+  background-color: #FCE6B0;
+  margin-top: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 2px black;
+  -moz-box-shadow: 2px 2px 2px black;
+  padding: 30px;
+}
+
+.startreserv {
+  border: 1px solid #DD3200;
+  background-color: #FF5400;
+  background-image: -webkit-gradient(
+                    linear,
+                    left bottom,
+                    left top,
+                    color-stop(0.18, rgb(255,60,0)),
+                    color-stop(1, rgb(255,159,133))
+                );
+  background-image: -moz-linear-gradient(
+              center bottom,
+              rgb(255,60,0) 18%,
+              rgb(255,159,133) 100%
+          );
+  color: #FFDDCC;
+  padding: 20px;
+  display: inline-block;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bold;
+  text-shadow: -1px -1px 2px rgba(0,0,0,0.4), 1px 1px 1px rgba(255,255,255,0.3);
+  -webkit-box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+
+.startreserv:hover {
+  background-color: #FFA050;
+  background-image: -webkit-gradient(
+                    linear,
+                    left bottom,
+                    left top,
+                    color-stop(0.18, rgb(255,90,20)),
+                    color-stop(1, rgb(255,190,160))
+                );
+  background-image: -moz-linear-gradient(
+              center bottom,
+              rgb(255,90,20) 18%,
+              rgb(255,190,160) 100%
+          );
+}
+
+.startreserv:active {
+  background-color: #FFA050;
+  background-image: -webkit-gradient(
+                      linear,
+                      left bottom,
+                      left top,
+                      color-stop(0, rgb(204,70,33)),
+                      color-stop(1, rgb(117,23,0))
+                    );
+  background-image: -moz-linear-gradient(
+                      center bottom,
+                      rgb(204,70,33) 0%,
+                      rgb(117,23,0) 100%
+                    );
+}
+
+fieldset {
+  border: 2px solid rgba(0,0,0,0.2);
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 0px;
+  margin-bottom: 20px;
+}
+fieldset legend {
+  font-weight: bold;
+  font-size: larger;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.wraplabel {
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.wrapwidget {
+  margin-top: 3px;
+  margin-bottom: 0px;
+}
+.wraphelp {
+  margin-top: 3px;
+  font-size: smaller;
+}
+
+.wrapfield {
+  padding-left: 20px;
+  border-left: 10px solid rgba(0,0,0,0.2);
+  border-radius: 30px;
+}
+
+.wrapfield input[type=text]{
+  padding: 3px 5px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  width: 300px;
+  font-family: inherit;
+}
+.wrapfield ul {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.wrapprix {
+  margin-top: 3px;
+  font-weight: bold;
+  color: rgba(0,0,0,0.6);
+}
+
+.wrapnext, .wrapend {
+  text-align: right;
+}
+
+.wrapnext input[type=submit] {
+  padding: 5px 8px;
+  font-family: inherit;
+}
+
+.wrapcommande .wrapfield {
+  position: relative;
+  padding-left: 80px;
+}
+
+.wrapcommande .wraphelp {
+  margin-bottom: 0px;
+}
+
+.erroredfield {
+  background-color: #FFA050;
+  border-color: #DD3200;
+}
+
+input[type=text].inqt {
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  left: 15px;
+  font-size: 28px;
+  width: 40px;
+}
