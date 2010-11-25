@@ -1,0 +1,54 @@
+Reservation:
+  columns:
+    id: 
+      type: integer
+      primary: true
+    nom: string(30)
+    prenom: string(20)
+    login: string(20)
+    num_insa: string(7)
+    paye_with: 
+      type: enum 
+      values:
+        - especes
+        - cheque
+    banque_nom: string(30)
+    done_at: timestamp
+  relations:
+    Produits:
+      class: Produit
+      local: reservation_id
+      foreign: produit_id
+      refClass: LigneCommande
+    LigneCommandes:
+      class: LigneCommande
+      local: id
+      foreign: reservation_id
+
+LigneCommande:
+  columns:
+    reservation_id: 
+      type: integer
+      primary: true
+    produit_id:
+      type: integer
+      primary: true
+    quantite: integer
+  relations:
+    Reservation:
+      local: reservation_id
+      foreign: id
+    Produit:
+      local: produit_id
+      foreign: id
+
+Produit:
+  columns:
+    id:
+      type: integer
+      primary: true
+    intitule:  string(20)
+    description: string(200)
+    prix: 
+      type: decimal(5)
+      scale: 2
