@@ -106,6 +106,10 @@ class reswizardActions extends sfActions
     
     $reservation = new Reservation();
     $reservation->setArray($this->getUser()->getAttribute("currentIdentity") + $this->getUser()->getAttribute("currentValidation"));
+    $reservation->setValidatedAt(time());
     $reservation->save();
+    
+    $this->reservation = $reservation;
+    $this->getUser()->getAttributeHolder()->clear();
   }
 }

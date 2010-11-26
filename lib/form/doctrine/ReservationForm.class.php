@@ -46,6 +46,18 @@ class IdentityReservationForm extends ReservationForm
   {
     parent::configure();
     $this->useFields(array("nom", "prenom", "login", "num_insa"));
+    $this->validatorSchema->setPostValidator(
+      new sfValidatorDoctrineUnique(
+        array(
+          'model' => 'Reservation',
+          'column' => array('login'),
+          'throw_global_error' => false
+        ),
+        array(
+          'invalid' => "Quelqu'un s'est déjà inscrit avec ce login. Nous vous invitons à annuler votre réservation et à en recréer une."
+        )
+      )
+    );
   }
 }
 

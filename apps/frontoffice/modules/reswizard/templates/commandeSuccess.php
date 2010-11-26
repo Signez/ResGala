@@ -18,7 +18,7 @@
         <div class="wrapfield">
           <p class="wraplabel"><?php echo $produit->getIntitule(); ?></p>
           <p class="wraphelp"><?php echo $produit->getDescription(); ?></p>
-          <p class="wrapprix"><?php echo $produit->getPrix(); ?> €</p>
+          <p class="wrapprix"><?php echo sprintf('%.2f', $produit->getPrix()); ?> €</p>
           <input type="text" name="commande[<?php echo $produit->getId(); ?>]"
                  value="<?php echo (isset($commande[intval($produit->getId())]))
                                    ? $commande[intval($produit->getId())]

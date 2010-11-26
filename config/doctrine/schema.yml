@@ -25,6 +25,11 @@ Reservation:
       class: LigneCommande
       local: id
       foreign: reservation_id
+  indexes:
+    LoginINSA:
+      fields: 
+        - login
+      type: unique
 
 LigneCommande:
   columns:

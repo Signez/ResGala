@@ -5558,3 +5558,173 @@ Nov 25 23:50:47 symfony [info] {sfWebDebugLogger} Action "reswizard/done" 108.01
 Nov 25 23:50:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
 Nov 25 23:50:47 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/done" 9.17 ms (1)
 Nov 25 23:50:47 symfony [info] {sfWebResponse} Send content (30436 o)
+Nov 26 13:23:28 symfony [info] {sfPatternRouting} Match route "resa_done" (/reservation/done) for /reservation/done with parameters array (  'module' => 'reswizard',  'action' => 'done',)
+Nov 26 13:23:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 26 13:23:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 26 13:23:28 symfony [info] {reswizardActions} Call "reswizardActions->executeDone()"
+Nov 26 13:23:28 symfony [err] {Doctrine_Record_UnknownPropertyException} Unknown record property / related component "done_at" on "Reservation"
+Nov 26 13:23:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Nov 26 13:23:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 26 13:23:28 symfony [info] {sfWebDebugLogger} Configuration 249.77 ms (9)
+Nov 26 13:23:28 symfony [info] {sfWebDebugLogger} Factories 311.94 ms (1)
+Nov 26 13:23:28 symfony [info] {sfWebDebugLogger} Action "reswizard/done" 211.91 ms (1)
+Nov 26 13:24:10 symfony [info] {sfPatternRouting} Match route "resa_done" (/reservation/done) for /reservation/done with parameters array (  'module' => 'reswizard',  'action' => 'done',)
+Nov 26 13:24:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 26 13:24:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 26 13:24:10 symfony [info] {reswizardActions} Call "reswizardActions->executeDone()"
+Nov 26 13:24:10 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO reservation (nom, prenom, login, num_insa, paye_with, banque_nom, validated_at) VALUES (?, ?, ?, ?, ?, ?, ?) - (Dupont, Paul, pdupont, 1234567, especes, , 1290774250)
+Nov 26 13:24:10 symfony [err] {Doctrine_Connection_Sqlite_Exception} SQLSTATE[HY000]: General error: 8 attempt to write a readonly database
+Nov 26 13:24:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Nov 26 13:24:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 26 13:24:11 symfony [info] {sfWebDebugLogger} Configuration 3.13 ms (8)
+Nov 26 13:24:11 symfony [info] {sfWebDebugLogger} Factories 88.19 ms (1)
+Nov 26 13:24:11 symfony [info] {sfWebDebugLogger} Action "reswizard/done" 322.04 ms (1)
+Nov 26 13:24:11 symfony [info] {sfWebDebugLogger} Database (Doctrine) 248.65 ms (1)
+Nov 26 13:24:40 symfony [info] {sfPatternRouting} Match route "resa_done" (/reservation/done) for /reservation/done with parameters array (  'module' => 'reswizard',  'action' => 'done',)
+Nov 26 13:24:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 26 13:24:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 26 13:24:40 symfony [info] {reswizardActions} Call "reswizardActions->executeDone()"
+Nov 26 13:24:40 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO reservation (nom, prenom, login, num_insa, paye_with, banque_nom, validated_at) VALUES (?, ?, ?, ?, ?, ?, ?) - (Dupont, Paul, pdupont, 1234567, especes, , 1290774280)
+Nov 26 13:24:40 symfony [info] {sfPHPView} Render "/var/www/resgala/apps/frontoffice/modules/reswizard/templates/doneSuccess.php"
+Nov 26 13:24:40 symfony [info] {sfPHPView} Decorate content with "/var/www/resgala/apps/frontoffice/templates/layout.php"
+Nov 26 13:24:40 symfony [info] {sfPHPView} Render "/var/www/resgala/apps/frontoffice/templates/layout.php"
+Nov 26 13:24:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 26 13:24:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 26 13:24:40 symfony [info] {sfWebDebugLogger} Configuration 37.78 ms (10)
+Nov 26 13:24:40 symfony [info] {sfWebDebugLogger} Factories 101.90 ms (1)
+Nov 26 13:24:40 symfony [info] {sfWebDebugLogger} Action "reswizard/done" 317.59 ms (1)
+Nov 26 13:24:40 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (1)
+Nov 26 13:24:40 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/done" 73.12 ms (1)
+Nov 26 13:24:40 symfony [info] {sfWebResponse} Send content (30010 o)
+Nov 26 13:24:48 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'accueil',  'action' => 'index',)
+Nov 26 13:24:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 26 13:24:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 26 13:24:48 symfony [info] {accueilActions} Call "accueilActions->executeIndex()"
+Nov 26 13:24:48 symfony [info] {sfPHPView} Render "/var/www/resgala/apps/frontoffice/modules/accueil/templates/indexSuccess.php"
+Nov 26 13:24:48 symfony [info] {sfPHPView} Decorate content with "/var/www/resgala/apps/frontoffice/templates/layout.php"
+Nov 26 13:24:48 symfony [info] {sfPHPView} Render "/var/www/resgala/apps/frontoffice/templates/layout.php"
+Nov 26 13:24:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 26 13:24:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 26 13:24:48 symfony [info] {sfWebDebugLogger} Configuration 53.39 ms (10)
+Nov 26 13:24:48 symfony [info] {sfWebDebugLogger} Factories 88.35 ms (1)
+Nov 26 13:24:48 symfony [info] {sfWebDebugLogger} Action "accueil/index" 0.34 ms (1)
+Nov 26 13:24:48 symfony [info] {sfWebDebugLogger} View "Success" for "accueil/index" 33.37 ms (1)
+Nov 26 13:24:48 symfony [info] {sfWebResponse} Send content (27678 o)
+Nov 26 13:24:49 symfony [info] {sfPatternRouting} Match route "start_reserv" (/reservation/identity) for /reservation/identity with parameters array (  'module' => 'reswizard',  'action' => 'start',)
+Nov 26 13:24:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 26 13:24:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 26 13:24:49 symfony [info] {reswizardActions} Call "reswizardActions->executeStart()"
+Nov 26 13:24:49 symfony [info] {sfPHPView} Render "/var/www/resgala/apps/frontoffice/modules/reswizard/templates/startSuccess.php"
+Nov 26 13:24:49 symfony [info] {sfPHPView} Decorate content with "/var/www/resgala/apps/frontoffice/templates/layout.php"
+Nov 26 13:24:49 symfony [info] {sfPHPView} Render "/var/www/resgala/apps/frontoffice/templates/layout.php"
+Nov 26 13:24:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 26 13:24:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 26 13:24:49 symfony [info] {sfWebDebugLogger} Configuration 5.53 ms (9)
+Nov 26 13:24:49 symfony [info] {sfWebDebugLogger} Factories 88.56 ms (1)
+Nov 26 13:24:49 symfony [info] {sfWebDebugLogger} Action "reswizard/start" 97.38 ms (1)
+Nov 26 13:24:49 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/start" 45.63 ms (1)
+Nov 26 13:24:49 symfony [info] {sfWebResponse} Send content (31959 o)
+Nov 26 13:24:59 symfony [info] {sfPatternRouting} Match route "identity_save" (/reservation/identity/save) for /reservation/identity/save with parameters array (  'module' => 'reswizard',  'action' => 'saveStart',)
+Nov 26 13:24:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 26 13:24:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 26 13:24:59 symfony [info] {reswizardActions} Call "reswizardActions->executeSaveStart()"
+Nov 26 13:24:59 symfony [info] {Doctrine_Connection_Statement} execute : SELECT r.id AS r__id, r.nom AS r__nom, r.prenom AS r__prenom, r.login AS r__login, r.num_insa AS r__num_insa, r.paye_with AS r__paye_with, r.banque_nom AS r__banque_nom, r.validated_at AS r__validated_at, r.payed_at AS r__payed_at FROM reservation r WHERE (r.login = ?) - (pdupont)
+Nov 26 13:24:59 symfony [info] {reswizardActions} Change template to "CURRENT/start"
+Nov 26 13:24:59 symfony [info] {sfPHPView} Render "/var/www/resgala/apps/frontoffice/modules/reswizard/templates/startSuccess.php"
+Nov 26 13:24:59 symfony [info] {sfPHPView} Decorate content with "/var/www/resgala/apps/frontoffice/templates/layout.php"
+Nov 26 13:24:59 symfony [info] {sfPHPView} Render "/var/www/resgala/apps/frontoffice/templates/layout.php"
+Nov 26 13:24:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 26 13:24:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 26 13:24:59 symfony [info] {sfWebDebugLogger} Configuration 4.79 ms (9)
+Nov 26 13:24:59 symfony [info] {sfWebDebugLogger} Factories 91.44 ms (1)
+Nov 26 13:24:59 symfony [info] {sfWebDebugLogger} Action "reswizard/saveStart" 162.60 ms (1)
+Nov 26 13:24:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (1)
+Nov 26 13:24:59 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/saveStart" 35.25 ms (1)
+Nov 26 13:24:59 symfony [info] {sfWebResponse} Send content (36204 o)
+Nov 26 13:33:15 symfony [info] {sfPatternRouting} Match route "identity_save" (/reservation/identity/save) for /reservation/identity/save with parameters array (  'module' => 'reswizard',  'action' => 'saveStart',)
+Nov 26 13:33:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 26 13:33:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 26 13:33:15 symfony [info] {reswizardActions} Call "reswizardActions->executeSaveStart()"
+Nov 26 13:33:15 symfony [info] {reswizardActions} Change template to "CURRENT/start"
+Nov 26 13:33:15 symfony [info] {sfPHPView} Render "/var/www/resgala/apps/frontoffice/modules/reswizard/templates/startSuccess.php"
+Nov 26 13:33:15 symfony [info] {sfPHPView} Decorate content with "/var/www/resgala/apps/frontoffice/templates/layout.php"
+Nov 26 13:33:15 symfony [info] {sfPHPView} Render "/var/www/resgala/apps/frontoffice/templates/layout.php"
+Nov 26 13:33:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 26 13:33:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 26 13:33:15 symfony [info] {sfWebDebugLogger} Configuration 3.48 ms (9)
+Nov 26 13:33:15 symfony [info] {sfWebDebugLogger} Factories 94.36 ms (1)
+Nov 26 13:33:15 symfony [info] {sfWebDebugLogger} Action "reswizard/saveStart" 83.13 ms (1)
+Nov 26 13:33:15 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/saveStart" 40.09 ms (1)
+Nov 26 13:33:15 symfony [info] {sfWebResponse} Send content (32513 o)
+Nov 26 13:33:30 symfony [info] {sfPatternRouting} Match route "identity_save" (/reservation/identity/save) for /reservation/identity/save with parameters array (  'module' => 'reswizard',  'action' => 'saveStart',)
+Nov 26 13:33:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 26 13:33:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 26 13:33:30 symfony [info] {reswizardActions} Call "reswizardActions->executeSaveStart()"
+Nov 26 13:33:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT r.id AS r__id, r.nom AS r__nom, r.prenom AS r__prenom, r.login AS r__login, r.num_insa AS r__num_insa, r.paye_with AS r__paye_with, r.banque_nom AS r__banque_nom, r.validated_at AS r__validated_at, r.payed_at AS r__payed_at FROM reservation r WHERE (r.login = ?) - (pdupont)
+Nov 26 13:33:30 symfony [info] {reswizardActions} Change template to "CURRENT/start"
+Nov 26 13:33:30 symfony [info] {sfPHPView} Render "/var/www/resgala/apps/frontoffice/modules/reswizard/templates/startSuccess.php"
+Nov 26 13:33:30 symfony [info] {sfPHPView} Decorate content with "/var/www/resgala/apps/frontoffice/templates/layout.php"
+Nov 26 13:33:30 symfony [info] {sfPHPView} Render "/var/www/resgala/apps/frontoffice/templates/layout.php"
+Nov 26 13:33:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 26 13:33:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 26 13:33:30 symfony [info] {sfWebDebugLogger} Configuration 4.36 ms (9)
+Nov 26 13:33:30 symfony [info] {sfWebDebugLogger} Factories 95.89 ms (1)
+Nov 26 13:33:30 symfony [info] {sfWebDebugLogger} Action "reswizard/saveStart" 161.60 ms (1)
+Nov 26 13:33:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (1)
+Nov 26 13:33:30 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/saveStart" 34.45 ms (1)
+Nov 26 13:33:30 symfony [info] {sfWebResponse} Send content (36209 o)
+Nov 26 13:37:39 symfony [info] {sfPatternRouting} Match route "identity_save" (/reservation/identity/save) for /reservation/identity/save with parameters array (  'module' => 'reswizard',  'action' => 'saveStart',)
+Nov 26 13:37:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 26 13:37:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 26 13:37:39 symfony [info] {reswizardActions} Call "reswizardActions->executeSaveStart()"
+Nov 26 13:38:00 symfony [info] {sfPatternRouting} Match route "identity_save" (/reservation/identity/save) for /reservation/identity/save with parameters array (  'module' => 'reswizard',  'action' => 'saveStart',)
+Nov 26 13:38:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 26 13:38:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 26 13:38:00 symfony [info] {reswizardActions} Call "reswizardActions->executeSaveStart()"
+Nov 26 13:38:06 symfony [info] {sfPatternRouting} Match route "identity_save" (/reservation/identity/save) for /reservation/identity/save with parameters array (  'module' => 'reswizard',  'action' => 'saveStart',)
+Nov 26 13:38:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 26 13:38:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 26 13:38:06 symfony [info] {reswizardActions} Call "reswizardActions->executeSaveStart()"
+Nov 26 13:38:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT r.id AS r__id, r.nom AS r__nom, r.prenom AS r__prenom, r.login AS r__login, r.num_insa AS r__num_insa, r.paye_with AS r__paye_with, r.banque_nom AS r__banque_nom, r.validated_at AS r__validated_at, r.payed_at AS r__payed_at FROM reservation r WHERE (r.login = ?) - (pdupont)
+Nov 26 13:38:06 symfony [info] {reswizardActions} Change template to "CURRENT/start"
+Nov 26 13:38:06 symfony [info] {sfPHPView} Render "/var/www/resgala/apps/frontoffice/modules/reswizard/templates/startSuccess.php"
+Nov 26 13:38:06 symfony [info] {sfPHPView} Decorate content with "/var/www/resgala/apps/frontoffice/templates/layout.php"
+Nov 26 13:38:06 symfony [info] {sfPHPView} Render "/var/www/resgala/apps/frontoffice/templates/layout.php"
+Nov 26 13:38:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 26 13:38:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 26 13:38:06 symfony [info] {sfWebDebugLogger} Configuration 3.82 ms (9)
+Nov 26 13:38:06 symfony [info] {sfWebDebugLogger} Factories 89.00 ms (1)
+Nov 26 13:38:06 symfony [info] {sfWebDebugLogger} Action "reswizard/saveStart" 166.90 ms (1)
+Nov 26 13:38:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (1)
+Nov 26 13:38:06 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/saveStart" 36.21 ms (1)
+Nov 26 13:38:06 symfony [info] {sfWebResponse} Send content (36351 o)
+Nov 26 13:39:01 symfony [info] {sfPatternRouting} Match route "identity_save" (/reservation/identity/save) for /reservation/identity/save with parameters array (  'module' => 'reswizard',  'action' => 'saveStart',)
+Nov 26 13:39:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 26 13:39:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 26 13:39:01 symfony [info] {reswizardActions} Call "reswizardActions->executeSaveStart()"
+Nov 26 13:39:01 symfony [info] {Doctrine_Connection_Statement} execute : SELECT r.id AS r__id, r.nom AS r__nom, r.prenom AS r__prenom, r.login AS r__login, r.num_insa AS r__num_insa, r.paye_with AS r__paye_with, r.banque_nom AS r__banque_nom, r.validated_at AS r__validated_at, r.payed_at AS r__payed_at FROM reservation r WHERE (r.login = ?) - (ssignoud)
+Nov 26 13:39:01 symfony [info] {sfFrontWebController} Redirect to "http://resgala.localhost/frontoffice_dev.php/reservation/commande"
+Nov 26 13:39:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Nov 26 13:39:01 symfony [info] {sfWebResponse} Send header "Location: http://resgala.localhost/frontoffice_dev.php/reservation/commande"
+Nov 26 13:39:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 26 13:39:01 symfony [info] {sfWebDebugLogger} Configuration 4.39 ms (8)
+Nov 26 13:39:01 symfony [info] {sfWebDebugLogger} Factories 91.79 ms (1)
+Nov 26 13:39:01 symfony [info] {sfWebDebugLogger} Action "reswizard/saveStart" 182.43 ms (1)
+Nov 26 13:39:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (1)
+Nov 26 13:39:01 symfony [info] {sfWebResponse} Send content (136 o)
+Nov 26 13:39:01 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 26 13:39:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 26 13:39:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 26 13:39:01 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 26 13:39:02 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 26 13:39:02 symfony [info] {sfPHPView} Render "/var/www/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 26 13:39:02 symfony [info] {sfPHPView} Decorate content with "/var/www/resgala/apps/frontoffice/templates/layout.php"
+Nov 26 13:39:02 symfony [info] {sfPHPView} Render "/var/www/resgala/apps/frontoffice/templates/layout.php"
+Nov 26 13:39:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 26 13:39:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 26 13:39:02 symfony [info] {sfWebDebugLogger} Configuration 3.76 ms (9)
+Nov 26 13:39:02 symfony [info] {sfWebDebugLogger} Factories 91.23 ms (1)
+Nov 26 13:39:02 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 92.23 ms (1)
+Nov 26 13:39:02 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (1)
+Nov 26 13:39:02 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 45.12 ms (1)
+Nov 26 13:39:02 symfony [info] {sfWebResponse} Send content (32722 o)

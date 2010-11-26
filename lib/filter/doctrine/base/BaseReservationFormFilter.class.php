@@ -19,7 +19,8 @@ abstract class BaseReservationFormFilter extends BaseFormFilterDoctrine
       'num_insa'      => new sfWidgetFormFilterInput(),
       'paye_with'     => new sfWidgetFormChoice(array('choices' => array('' => '', 'especes' => 'especes', 'cheque' => 'cheque'))),
       'banque_nom'    => new sfWidgetFormFilterInput(),
-      'done_at'       => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate())),
+      'validated_at'  => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate())),
+      'payed_at'      => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate())),
       'produits_list' => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'Produit')),
     ));
 
@@ -30,7 +31,8 @@ abstract class BaseReservationFormFilter extends BaseFormFilterDoctrine
       'num_insa'      => new sfValidatorPass(array('required' => false)),
       'paye_with'     => new sfValidatorChoice(array('required' => false, 'choices' => array('especes' => 'especes', 'cheque' => 'cheque'))),
       'banque_nom'    => new sfValidatorPass(array('required' => false)),
-      'done_at'       => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
+      'validated_at'  => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
+      'payed_at'      => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
       'produits_list' => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'Produit', 'required' => false)),
     ));
 
@@ -76,7 +78,8 @@ abstract class BaseReservationFormFilter extends BaseFormFilterDoctrine
       'num_insa'      => 'Text',
       'paye_with'     => 'Enum',
       'banque_nom'    => 'Text',
-      'done_at'       => 'Date',
+      'validated_at'  => 'Date',
+      'payed_at'      => 'Date',
       'produits_list' => 'ManyKey',
     );
   }

@@ -22,7 +22,8 @@ abstract class BaseReservationForm extends BaseFormDoctrine
       'num_insa'      => new sfWidgetFormInputText(),
       'paye_with'     => new sfWidgetFormChoice(array('choices' => array('especes' => 'especes', 'cheque' => 'cheque'))),
       'banque_nom'    => new sfWidgetFormInputText(),
-      'done_at'       => new sfWidgetFormDateTime(),
+      'validated_at'  => new sfWidgetFormDateTime(),
+      'payed_at'      => new sfWidgetFormDateTime(),
       'produits_list' => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'Produit')),
     ));
 
@@ -34,9 +35,14 @@ abstract class BaseReservationForm extends BaseFormDoctrine
       'num_insa'      => new sfValidatorString(array('max_length' => 7, 'required' => false)),
       'paye_with'     => new sfValidatorChoice(array('choices' => array(0 => 'especes', 1 => 'cheque'), 'required' => false)),
       'banque_nom'    => new sfValidatorString(array('max_length' => 30, 'required' => false)),
-      'done_at'       => new sfValidatorDateTime(array('required' => false)),
+      'validated_at'  => new sfValidatorDateTime(array('required' => false)),
+      'payed_at'      => new sfValidatorDateTime(array('required' => false)),
       'produits_list' => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'Produit', 'required' => false)),
     ));
+
+    $this->validatorSchema->setPostValidator(
+      new sfValidatorDoctrineUnique(array('model' => 'Reservation', 'column' => array('login')))
+    );
 
     $this->widgetSchema->setNameFormat('reservation[%s]');
 

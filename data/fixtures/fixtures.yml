@@ -5,7 +5,7 @@ Produit:
     description: |
       Place du Gala, proposée au tarif normal ; accessible sans restriction à toute personne accompagnant un étudiant ou une personne
       diplômée de l'INSA.
-    prix: 12.50
+    prix: 32.50
 
   tarifreduit:
     id: 2
@@ -13,21 +13,21 @@ Produit:
     description: |
       Place du Gala, proposée au tarif réduit. Réservée aux diplômés, étudiants, lycéens, chômeurs. Un justificatif de cette situation
       pourra vous être demandé.
-    prix: 10.00
+    prix: 25.00
 
   repas:
     id: 3
     intitule: Repas
     description: |
       Place pour une personne pour le repas du Gala.
-    prix: 9.00
+    prix: 15.00
 
   champagne:
     id: 4
     intitule: Bouteille de Champagne
     description: |
       Quoi de mieux pour fêter l'occasion qu'une bonne bouteille de Champagne ?
-    prix: 16.00
+    prix: 17.50
 
   storckiesPar10:
     id: 5
@@ -35,4 +35,4 @@ Produit:
     description: |
       Monnaie d'échange à l'intérieur du Gala, ces Stockies vous permetteront d'acquérir toute sorte de boissons et services durant
       le Gala.
-    prix: 20.00
+    prix: 5.00

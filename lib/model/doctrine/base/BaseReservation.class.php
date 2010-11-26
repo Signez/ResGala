@@ -12,7 +12,8 @@
  * @property string $num_insa
  * @property enum $paye_with
  * @property string $banque_nom
- * @property timestamp $done_at
+ * @property timestamp $validated_at
+ * @property timestamp $payed_at
  * @property Doctrine_Collection $Produits
  * @property LigneCommande $LigneCommandes
  * 
@@ -23,7 +24,8 @@
  * @method string              getNumInsa()        Returns the current record's "num_insa" value
  * @method enum                getPayeWith()       Returns the current record's "paye_with" value
  * @method string              getBanqueNom()      Returns the current record's "banque_nom" value
- * @method timestamp           getDoneAt()         Returns the current record's "done_at" value
+ * @method timestamp           getValidatedAt()    Returns the current record's "validated_at" value
+ * @method timestamp           getPayedAt()        Returns the current record's "payed_at" value
  * @method Doctrine_Collection getProduits()       Returns the current record's "Produits" collection
  * @method LigneCommande       getLigneCommandes() Returns the current record's "LigneCommandes" value
  * @method Reservation         setId()             Sets the current record's "id" value
@@ -33,7 +35,8 @@
  * @method Reservation         setNumInsa()        Sets the current record's "num_insa" value
  * @method Reservation         setPayeWith()       Sets the current record's "paye_with" value
  * @method Reservation         setBanqueNom()      Sets the current record's "banque_nom" value
- * @method Reservation         setDoneAt()         Sets the current record's "done_at" value
+ * @method Reservation         setValidatedAt()    Sets the current record's "validated_at" value
+ * @method Reservation         setPayedAt()        Sets the current record's "payed_at" value
  * @method Reservation         setProduits()       Sets the current record's "Produits" collection
  * @method Reservation         setLigneCommandes() Sets the current record's "LigneCommandes" value
  * 
@@ -79,8 +82,20 @@ abstract class BaseReservation extends sfDoctrineRecord
              'type' => 'string',
              'length' => 30,
              ));
-        $this->hasColumn('done_at', 'timestamp', null, array(
+        $this->hasColumn('validated_at', 'timestamp', null, array(
              'type' => 'timestamp',
+             ));
+        $this->hasColumn('payed_at', 'timestamp', null, array(
+             'type' => 'timestamp',
+             ));
+
+
+        $this->index('LoginINSA', array(
+             'fields' => 
+             array(
+              0 => 'login',
+             ),
+             'type' => 'unique',
              ));
     }
 
