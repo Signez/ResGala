@@ -7,3 +7,5 @@ Comme tous les projets Symfony, ce site doit être déployé de manière particu
  * Avec un VirtualHost dont le DocumentRoot est ./web/
 
 Il est impératif de ne pas rendre accessible aux utilisateurs les autres dossiers.
+
+Ensuite, il suffit de se rendre dans le dossier resgala (racine de ce dépôt) et de taper "php symfony doctrine:build --all --and-build".
