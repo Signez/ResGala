@@ -5,34 +5,37 @@ Produit:
     description: |
       Place du Gala, proposée au tarif normal ; accessible sans restriction à toute personne accompagnant un étudiant ou une personne
       diplômée de l'INSA.
-    prix: 32.50
+    prix: 35.00
+
+  tarifinsa:
+    id: 2
+    intitule: Place, tarif INSA
+    description: |
+      Place du Gala, proposée au tarif réduit INSA. Réservé aux étudiants de l'INSA de Lyon. Votre carte d'étudiant sera demandée
+      à l'entée du Gala.
+    prix: 22.00
 
   tarifreduit:
-    id: 2
+    id: 3
     intitule: Place, tarif réduit
     description: |
       Place du Gala, proposée au tarif réduit. Réservée aux diplômés, étudiants, lycéens, chômeurs. Un justificatif de cette situation
-      pourra vous être demandé.
+      vous sera demandé à l'entrée du Gala.
     prix: 25.00
 
   repas:
-    id: 3
+    id: 4
     intitule: Repas
     description: |
-      Place pour une personne pour le repas du Gala.
+      Place pour une personne pour le repas du Gala, n'incluant pas la place pour la soirée. Nécessaire également pour retirer du champagne au bar.
     prix: 15.00
+    #qmax: 2000
 
   champagne:
-    id: 4
-    intitule: Bouteille de Champagne
-    description: |
-      Quoi de mieux pour fêter l'occasion qu'une bonne bouteille de Champagne ?
-    prix: 17.50
-
-  storckiesPar10:
     id: 5
-    intitule: Storkies (x10)
+    intitule: Magnum de Champagne
     description: |
-      Monnaie d'échange à l'intérieur du Gala, ces Stockies vous permetteront d'acquérir toute sorte de boissons et services durant
-      le Gala.
-    prix: 5.00
+      Quoi de mieux pour fêter l'occasion qu'un bon magnum de Champagne ? Ces bons à échanger contre une bouteille sont également achetable sur 
+      place.
+    prix: 30
+

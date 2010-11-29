@@ -76,11 +76,16 @@ class reswizardActions extends sfActions
 
   public function executeValidate(sfWebRequest $request)
   {
-    $this->form = new ValidateReservationForm();
+    if(!isset($this->form)) $this->form = new ValidateReservationForm();
 
     if($this->getUser()->hasAttribute("currentValidation")){
       $this->form->setDefaults($this->getUser()->getAttribute("currentValidation"));
     }
+
+    $this->commande = $this->getUser()->getAttribute("currentCommande", array());
+    $this->identity = $this->getUser()->getAttribute("currentIdentity", array());
+
+    $this->produits = Doctrine::getTable('Produit')->findAll();
   }
 
   public function executeSaveValidate(sfWebRequest $request)
@@ -95,6 +100,7 @@ class reswizardActions extends sfActions
       }
     }
 
+    $this->executeValidate($request);
     $this->setTemplate('validate');
   }
 

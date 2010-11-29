@@ -11,7 +11,6 @@
 class BaseForm extends sfFormSymfony
 {
   public function setup(){
-    sfValidatorBase::setDefaultMessage('required', 'Champ obligatoire');
-    sfValidatorBase::setDefaultMessage('invalid', 'Valeur non valide');
+    
   }
 }

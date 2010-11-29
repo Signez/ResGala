@@ -172,9 +172,13 @@ fieldset legend {
   font-family: inherit;
 }
 
-.wrapcommande .wrapfield {
+.wrapcommande .wrapfield, .recapcommande .wrapfield {
   position: relative;
   padding-left: 80px;
+}
+
+.recapcommande .wrapfield {
+  padding-left: 50px;
 }
 
 .wrapcommande .wraphelp {
@@ -186,7 +190,7 @@ fieldset legend {
   border-color: #DD3200;
 }
 
-input[type=text].inqt {
+input[type=text].inqt, .rappelintq {
   position: absolute;
   top: 50%;
   margin-top: -22px;
@@ -195,16 +199,51 @@ input[type=text].inqt {
   width: 40px;
 }
 
+.rappelintq {
+  width: 25px;
+  text-align: center;
+}
+
 .plhowojs {
   opacity: 0.8;
   font-style: italic;
 }
 
-.soustotal p {
+.soustotal p, p.soustotal {
   text-align: right;
   margin-bottom: 0px;
 }
 
 .soustotal strong {
   font-size: 24pt;
+}
+
+.recapcommande .soustotal strong {
+  font-size: 16pt;
+}
+
+.rememberthisdate {
+  font-size: larger;
+}
+
+.wrapfield ul.error_list {
+  padding-left: 0px;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+.error_list li {
+  background-color: #ffcccc;
+  color: #990033;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  padding: 5px;
+  margin-left: 0px;
+  border: 1px solid #990033;
+  border-radius: 5px;
+}
+
+.infoimportante {
+  border-left: 10px solid #990033;
+  padding-left: 20px;
+  border-radius: 30px;
 }

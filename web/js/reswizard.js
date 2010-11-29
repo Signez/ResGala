@@ -42,8 +42,8 @@ $(document).ready(function(){
       $(".wrapfield:has(#reservation_banque_nom)").stop(true, true)
         .animate({height: "show", opacity: "show", marginTop: "1em", marginBottom: "1em"});
     }else{
-      $(".wrapfield:has(#reservation_banque_nom)")
-        .stop(true, true).animate({height: "hide", opacity: "hide", marginTop: 0, marginBottom: 0});
+      $(".wrapfield:has(#reservation_banque_nom)").stop(true, true)
+        .animate({height: "hide", opacity: "hide", marginTop: 0, marginBottom: 0});
     }
   }
 
