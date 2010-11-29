@@ -1,0 +1,20 @@
+<trans-unit>
+  <source>is empty</source>
+  <target>est vide</target>
+</trans-unit>
+<trans-unit>
+  <source>yes or no</source>
+  <target>oui ou non</target>
+</trans-unit>
+<trans-unit>
+  <source>yes</source>
+  <target>oui</target>
+</trans-unit>
+<trans-unit>
+  <source>no</source>
+  <target>non</target>
+</trans-unit>
+<trans-unit>
+  <source><![CDATA[from %from_date%<br />to %to_date%]]></source>
+  <target><![CDATA[du %from_date%<br />au %to_date%]]></target>
+</trans-unit>

@@ -12,4 +12,11 @@
  */
 class Reservation extends BaseReservation
 {
+  public function paye($force = false){
+    if(!$force and $this->getValidatedAt() < date())
+      return false;
+    
+    $this->setPayedAt(date());
+    $this->save();
+  }
 }

@@ -1,0 +1,30 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Reservation
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          reservation
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: 
+        _new: {}
+      fields:  ~
+      list:
+        title:  Liste des réservations
+        #layout: stacked
+        display: [id, =prenom, =nom, login, num_insa, paye_with, banque_nom]
+        object_actions:
+          paye: ~
+      filter:
+        display: [prenom, nom, login, num_insa, paye_with, banque_nom]
+      form:    ~
+      edit:
+        title:  Modification de la réservation de %%prenom%% %%nom%%
+      new:
+        title:  Nouvelle réservation
