@@ -12,11 +12,19 @@
  */
 class Reservation extends BaseReservation
 {
+  public function getExpiredAt(){
+    return $this->getValidatedAt() + 15*24*3600;
+  }
+
   public function paye($force = false){
-    if(!$force and $this->getValidatedAt() < date())
+    if(!$force and $this->getExpiredAt() < date())
       return false;
     
     $this->setPayedAt(date());
     $this->save();
+  }
+
+  public function isPayed(){
+    if($this->getValidatedAt() + 15*24*3600) < date())
   }
 }

@@ -5122,3 +5122,47 @@ Nov 29 11:06:06 symfony [info] {sfWebDebugLogger} Partial "resmanager/_form_fiel
 Nov 29 11:06:06 symfony [info] {sfWebDebugLogger} Partial "resmanager/_form_actions" 6.48 ms (1)
 Nov 29 11:06:06 symfony [info] {sfWebDebugLogger} Partial "resmanager/_form_footer" 1.75 ms (1)
 Nov 29 11:06:06 symfony [info] {sfWebResponse} Send content (78654 o)
+Nov 29 23:36:26 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/resmanager/" (/).
+Nov 29 23:36:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Nov 29 23:36:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 23:36:26 symfony [info] {sfWebDebugLogger} Configuration 67.70 ms (6)
+Nov 29 23:36:26 symfony [info] {sfWebDebugLogger} Factories 125.86 ms (1)
+Nov 29 23:36:29 symfony [info] {sfPatternRouting} Match route "reservation" (/resmanager.:sf_format) for /resmanager with parameters array (  'module' => 'resmanager',  'action' => 'index',  'sf_format' => 'html',)
+Nov 29 23:36:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 23:36:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 23:36:29 symfony [info] {resmanagerActions} Call "resmanagerActions->executeIndex()"
+Nov 29 23:36:29 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT COUNT(*) AS num_results FROM reservation r - ()
+Nov 29 23:36:29 symfony [info] {sfPHPView} Render "/srv/http/resgala/cache/backoffice/dev/modules/autoResmanager/templates/indexSuccess.php"
+Nov 29 23:36:29 symfony [info] {sfPartialView} Render "/srv/http/resgala/cache/backoffice/dev/modules/autoResmanager/templates/_assets.php"
+Nov 29 23:36:29 symfony [info] {sfPartialView} Render "/srv/http/resgala/cache/backoffice/dev/modules/autoResmanager/templates/_flashes.php"
+Nov 29 23:36:29 symfony [info] {sfPartialView} Render "/srv/http/resgala/cache/backoffice/dev/modules/autoResmanager/templates/_list_header.php"
+Nov 29 23:36:29 symfony [info] {sfPartialView} Render "/srv/http/resgala/apps/backoffice/modules/resmanager/templates/_filters.php"
+Nov 29 23:36:29 symfony [info] {sfPartialView} Render "/srv/http/resgala/apps/backoffice/modules/resmanager/templates/_filters_field.php"
+Nov 29 23:36:29 symfony [info] {sfPartialView} Render "/srv/http/resgala/apps/backoffice/modules/resmanager/templates/_filters_field.php"
+Nov 29 23:36:29 symfony [info] {sfPartialView} Render "/srv/http/resgala/apps/backoffice/modules/resmanager/templates/_filters_field.php"
+Nov 29 23:36:29 symfony [info] {sfPartialView} Render "/srv/http/resgala/apps/backoffice/modules/resmanager/templates/_filters_field.php"
+Nov 29 23:36:29 symfony [info] {sfPartialView} Render "/srv/http/resgala/apps/backoffice/modules/resmanager/templates/_filters_field.php"
+Nov 29 23:36:29 symfony [info] {sfPartialView} Render "/srv/http/resgala/apps/backoffice/modules/resmanager/templates/_filters_field.php"
+Nov 29 23:36:29 symfony [info] {sfPartialView} Render "/srv/http/resgala/cache/backoffice/dev/modules/autoResmanager/templates/_list.php"
+Nov 29 23:36:29 symfony [info] {sfPartialView} Render "/srv/http/resgala/cache/backoffice/dev/modules/autoResmanager/templates/_list_batch_actions.php"
+Nov 29 23:36:29 symfony [info] {sfPartialView} Render "/srv/http/resgala/cache/backoffice/dev/modules/autoResmanager/templates/_list_actions.php"
+Nov 29 23:36:29 symfony [info] {sfPartialView} Render "/srv/http/resgala/cache/backoffice/dev/modules/autoResmanager/templates/_list_footer.php"
+Nov 29 23:36:29 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/backoffice/templates/layout.php"
+Nov 29 23:36:29 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/backoffice/templates/layout.php"
+Nov 29 23:36:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 23:36:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 23:36:29 symfony [info] {sfWebDebugLogger} Configuration 135.43 ms (12)
+Nov 29 23:36:29 symfony [info] {sfWebDebugLogger} Factories 29.27 ms (1)
+Nov 29 23:36:29 symfony [info] {sfWebDebugLogger} Action "resmanager/index" 73.69 ms (1)
+Nov 29 23:36:29 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 23:36:29 symfony [info] {sfWebDebugLogger} View "Success" for "resmanager/index" 52.52 ms (1)
+Nov 29 23:36:29 symfony [info] {sfWebDebugLogger} Partial "resmanager/_assets" 0.47 ms (1)
+Nov 29 23:36:29 symfony [info] {sfWebDebugLogger} Partial "resmanager/_flashes" 0.50 ms (1)
+Nov 29 23:36:29 symfony [info] {sfWebDebugLogger} Partial "resmanager/_list_header" 0.42 ms (1)
+Nov 29 23:36:29 symfony [info] {sfWebDebugLogger} Partial "resmanager/_filters" 12.55 ms (1)
+Nov 29 23:36:29 symfony [info] {sfWebDebugLogger} Partial "resmanager/_filters_field" 5.92 ms (6)
+Nov 29 23:36:29 symfony [info] {sfWebDebugLogger} Partial "resmanager/_list" 0.56 ms (1)
+Nov 29 23:36:29 symfony [info] {sfWebDebugLogger} Partial "resmanager/_list_batch_actions" 0.76 ms (1)
+Nov 29 23:36:29 symfony [info] {sfWebDebugLogger} Partial "resmanager/_list_actions" 0.62 ms (1)
+Nov 29 23:36:29 symfony [info] {sfWebDebugLogger} Partial "resmanager/_list_footer" 0.40 ms (1)
+Nov 29 23:36:29 symfony [info] {sfWebResponse} Send content (72797 o)

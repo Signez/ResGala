@@ -25,10 +25,8 @@ class ReservationForm extends BaseReservationForm
                       "banque_nom" => "Le nom de la banque inscrit sur le chèque (le cas échéant) :"
                      ));
     $this->widgetSchema->setHelps(array(
-                      "nom" => "Ce nom vous sera notamment demandé lors du paiement de votre réservation
-                                sur place, et au cas où vous souhaiteriez l'annuler sur le site.",
-                      "login" => "Vous pourrez utiliser cet identifiant
-                                  pour modifier ou annuler votre réservation sur cette plateforme.",
+                      "nom" => "Ce nom vous sera notamment demandé lors du paiement ou du retrait de votre réservation.",
+                      "login" => "Cet identifiant vous sera demandé lors du paiement ou du retrait de votre réservation.",
                       "num_insa" => "Ce numéro à sept chiffres se trouve sur votre
                                     Carte d'Étudiant Multi-Service, situé juste sous votre INE.",
                       "banque_nom" => "Si vous réglez par chèque, indiquez ci-dessus le nom de la banque
