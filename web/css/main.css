@@ -247,3 +247,9 @@ input[type=text].inqt, .rappelintq {
   padding-left: 20px;
   border-radius: 30px;
 }
+
+.anoter {
+  border-left: 10px solid #009933;
+  padding-left: 20px;
+  border-radius: 30px;
+}

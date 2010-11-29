@@ -28,11 +28,18 @@ Produit:
     intitule: Repas
     description: |
       Place pour une personne pour le repas du Gala, n'incluant pas la place pour la soirée. Nécessaire également pour retirer du champagne au bar.
-    prix: 15.00
+    prix: 35.00
     #qmax: 2000
+    
+  repasvegetarien:
+    id: 5
+    intitule: Repas végétarien
+    description: |
+      Vous préférez un repas végétarien ? C'est possible aussi. Place pour le repas, n'incluant pas la place pour la soirée.
+    prix: 35.00
 
   champagne:
-    id: 5
+    id: 6
     intitule: Magnum de Champagne
     description: |
       Quoi de mieux pour fêter l'occasion qu'un bon magnum de Champagne ? Ces bons à échanger contre une bouteille sont également achetable sur 
