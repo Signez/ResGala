@@ -189,3 +189,17 @@ input[type=text].inqt {
   font-size: 28px;
   width: 40px;
 }
+
+.plhowojs {
+  opacity: 0.8;
+  font-style: italic;
+}
+
+.soustotal p {
+  text-align: right;
+  margin-bottom: 0px;
+}
+
+.soustotal strong {
+  font-size: 24pt;
+}

@@ -15,7 +15,7 @@
     <p>Vous pouvez sélectionner ci-dessous les éléments que vous souhaitez réserver pour ce XV<sup>ème</sup> Gala.</p>
     <div class="wrapcommande">
       <?php foreach($produits as $produit): ?>
-        <div class="wrapfield">
+        <div class="wrapfield" price="<?php echo sprintf('%.2f', $produit->getPrix()); ?>">
           <p class="wraplabel"><?php echo $produit->getIntitule(); ?></p>
           <p class="wraphelp"><?php echo $produit->getDescription(); ?></p>
           <p class="wrapprix"><?php echo sprintf('%.2f', $produit->getPrix()); ?> €</p>
@@ -26,6 +26,10 @@
                  placeholder="0" class="inqt <?php if(isset($errors['nan'.$produit->getId()])) echo " erroredfield"; ?>" />
         </div>
       <?php endforeach; ?>
+    </div>
+    <div class="soustotal">
+      <p class="plhowojs">(Activez Javascript sur votre navigateur pour obtenir un sous-total)</p>
+      <p>Sous-total : <strong>??.?? €</strong></p>
     </div>
   </fieldset>
   <p class="wrapnext">

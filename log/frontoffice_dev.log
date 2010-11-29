@@ -5728,3 +5728,514 @@ Nov 26 13:39:02 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 92
 Nov 26 13:39:02 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (1)
 Nov 26 13:39:02 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 45.12 ms (1)
 Nov 26 13:39:02 symfony [info] {sfWebResponse} Send content (32722 o)
+Nov 29 21:33:32 symfony [info] {sfPatternRouting} Match route "identity_save" (/reservation/identity/save) for /reservation/identity/save with parameters array (  'module' => 'reswizard',  'action' => 'saveStart',)
+Nov 29 21:33:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:33:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:33:32 symfony [info] {reswizardActions} Call "reswizardActions->executeSaveStart()"
+Nov 29 21:33:32 symfony [info] {reswizardActions} Change template to "CURRENT/start"
+Nov 29 21:33:32 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/startSuccess.php"
+Nov 29 21:33:32 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:33:32 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:33:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:33:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:33:32 symfony [info] {sfWebDebugLogger} Configuration 46.20 ms (10)
+Nov 29 21:33:32 symfony [info] {sfWebDebugLogger} Factories 71.83 ms (1)
+Nov 29 21:33:32 symfony [info] {sfWebDebugLogger} Action "reswizard/saveStart" 25.17 ms (1)
+Nov 29 21:33:32 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/saveStart" 12.84 ms (1)
+Nov 29 21:33:32 symfony [info] {sfWebResponse} Send content (32381 o)
+Nov 29 21:33:44 symfony [info] {sfPatternRouting} Match route "identity_save" (/reservation/identity/save) for /reservation/identity/save with parameters array (  'module' => 'reswizard',  'action' => 'saveStart',)
+Nov 29 21:33:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:33:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:33:44 symfony [info] {reswizardActions} Call "reswizardActions->executeSaveStart()"
+Nov 29 21:33:44 symfony [err] {Doctrine_Connection_Sqlite_Exception} SQLSTATE[HY000]: General error: 1 no such column: r.validated_at. Failing Query: "SELECT r.id AS r__id, r.nom AS r__nom, r.prenom AS r__prenom, r.login AS r__login, r.num_insa AS r__num_insa, r.paye_with AS r__paye_with, r.banque_nom AS r__banque_nom, r.validated_at AS r__validated_at, r.payed_at AS r__payed_at FROM reservation r WHERE (r.login = ?)"
+Nov 29 21:33:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Nov 29 21:33:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:33:44 symfony [info] {sfWebDebugLogger} Configuration 5.65 ms (8)
+Nov 29 21:33:44 symfony [info] {sfWebDebugLogger} Factories 24.18 ms (1)
+Nov 29 21:33:44 symfony [info] {sfWebDebugLogger} Action "reswizard/saveStart" 117.44 ms (1)
+Nov 29 21:34:16 symfony [info] {sfPatternRouting} Match route "identity_save" (/reservation/identity/save) for /reservation/identity/save with parameters array (  'module' => 'reswizard',  'action' => 'saveStart',)
+Nov 29 21:34:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:34:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:34:16 symfony [info] {reswizardActions} Call "reswizardActions->executeSaveStart()"
+Nov 29 21:34:16 symfony [info] {Doctrine_Connection_Statement} execute : SELECT r.id AS r__id, r.nom AS r__nom, r.prenom AS r__prenom, r.login AS r__login, r.num_insa AS r__num_insa, r.paye_with AS r__paye_with, r.banque_nom AS r__banque_nom, r.validated_at AS r__validated_at, r.payed_at AS r__payed_at FROM reservation r WHERE (r.login = ?) - (ssignoud)
+Nov 29 21:34:16 symfony [info] {sfFrontWebController} Redirect to "http://resgala.local/frontoffice_dev.php/reservation/commande"
+Nov 29 21:34:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Nov 29 21:34:16 symfony [info] {sfWebResponse} Send header "Location: http://resgala.local/frontoffice_dev.php/reservation/commande"
+Nov 29 21:34:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:34:16 symfony [info] {sfWebDebugLogger} Configuration 49.46 ms (9)
+Nov 29 21:34:16 symfony [info] {sfWebDebugLogger} Factories 26.50 ms (1)
+Nov 29 21:34:16 symfony [info] {sfWebDebugLogger} Action "reswizard/saveStart" 45.97 ms (1)
+Nov 29 21:34:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:34:16 symfony [info] {sfWebResponse} Send content (132 o)
+Nov 29 21:34:17 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:34:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:34:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:34:17 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:34:17 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:34:17 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:34:17 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:34:17 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:34:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:34:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:34:17 symfony [info] {sfWebDebugLogger} Configuration 6.32 ms (9)
+Nov 29 21:34:17 symfony [info] {sfWebDebugLogger} Factories 24.93 ms (1)
+Nov 29 21:34:17 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 48.33 ms (1)
+Nov 29 21:34:17 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:34:17 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 18.31 ms (1)
+Nov 29 21:34:17 symfony [info] {sfWebResponse} Send content (32812 o)
+Nov 29 21:34:58 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:34:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:34:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:34:58 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:34:58 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:34:58 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:34:58 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:34:58 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:34:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:34:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:34:58 symfony [info] {sfWebDebugLogger} Configuration 6.60 ms (9)
+Nov 29 21:34:58 symfony [info] {sfWebDebugLogger} Factories 27.94 ms (1)
+Nov 29 21:34:58 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 25.80 ms (1)
+Nov 29 21:34:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:34:58 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 15.33 ms (1)
+Nov 29 21:34:58 symfony [info] {sfWebResponse} Send content (32812 o)
+Nov 29 21:35:53 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:35:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:35:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:35:53 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:35:53 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:35:53 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:35:53 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:35:53 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:35:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:35:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:35:53 symfony [info] {sfWebDebugLogger} Configuration 6.28 ms (9)
+Nov 29 21:35:53 symfony [info] {sfWebDebugLogger} Factories 24.37 ms (1)
+Nov 29 21:35:53 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 25.01 ms (1)
+Nov 29 21:35:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:35:53 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 13.14 ms (1)
+Nov 29 21:35:53 symfony [info] {sfWebResponse} Send content (32874 o)
+Nov 29 21:36:19 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:36:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:36:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:36:19 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:36:19 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:36:19 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:36:19 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:36:19 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:36:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:36:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:36:19 symfony [info] {sfWebDebugLogger} Configuration 6.38 ms (9)
+Nov 29 21:36:19 symfony [info] {sfWebDebugLogger} Factories 26.18 ms (1)
+Nov 29 21:36:19 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 26.50 ms (1)
+Nov 29 21:36:19 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:36:19 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 12.85 ms (1)
+Nov 29 21:36:19 symfony [info] {sfWebResponse} Send content (32874 o)
+Nov 29 21:36:35 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:36:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:36:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:36:35 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:36:35 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:36:35 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:36:35 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:36:35 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:36:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:36:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:36:35 symfony [info] {sfWebDebugLogger} Configuration 13.29 ms (9)
+Nov 29 21:36:35 symfony [info] {sfWebDebugLogger} Factories 25.72 ms (1)
+Nov 29 21:36:35 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 25.59 ms (1)
+Nov 29 21:36:35 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:36:35 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 15.69 ms (1)
+Nov 29 21:36:35 symfony [info] {sfWebResponse} Send content (32876 o)
+Nov 29 21:36:36 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:36:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:36:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:36:36 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:36:36 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:36:36 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:36:36 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:36:36 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:36:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:36:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:36:36 symfony [info] {sfWebDebugLogger} Configuration 6.36 ms (9)
+Nov 29 21:36:36 symfony [info] {sfWebDebugLogger} Factories 24.57 ms (1)
+Nov 29 21:36:36 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 26.14 ms (1)
+Nov 29 21:36:36 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:36:36 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 13.69 ms (1)
+Nov 29 21:36:36 symfony [info] {sfWebResponse} Send content (32874 o)
+Nov 29 21:36:52 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:36:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:36:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:36:52 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:36:52 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:36:52 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:36:52 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:36:52 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:36:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:36:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:36:52 symfony [info] {sfWebDebugLogger} Configuration 6.33 ms (9)
+Nov 29 21:36:52 symfony [info] {sfWebDebugLogger} Factories 26.67 ms (1)
+Nov 29 21:36:52 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 25.95 ms (1)
+Nov 29 21:36:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:36:52 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 14.11 ms (1)
+Nov 29 21:36:52 symfony [info] {sfWebResponse} Send content (32874 o)
+Nov 29 21:38:41 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:38:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:38:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:38:41 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:38:41 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:38:41 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:38:41 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:38:41 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:38:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:38:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:38:41 symfony [info] {sfWebDebugLogger} Configuration 6.38 ms (9)
+Nov 29 21:38:41 symfony [info] {sfWebDebugLogger} Factories 28.36 ms (1)
+Nov 29 21:38:41 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 25.61 ms (1)
+Nov 29 21:38:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:38:41 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 13.60 ms (1)
+Nov 29 21:38:41 symfony [info] {sfWebResponse} Send content (32943 o)
+Nov 29 21:39:49 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:39:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:39:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:39:49 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:39:49 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:39:49 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:39:49 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:39:49 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:39:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:39:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:39:49 symfony [info] {sfWebDebugLogger} Configuration 6.83 ms (9)
+Nov 29 21:39:49 symfony [info] {sfWebDebugLogger} Factories 30.49 ms (1)
+Nov 29 21:39:49 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 26.18 ms (1)
+Nov 29 21:39:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:39:49 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 13.43 ms (1)
+Nov 29 21:39:49 symfony [info] {sfWebResponse} Send content (32943 o)
+Nov 29 21:41:11 symfony [info] {sfPatternRouting} Match route "commande_save" (/reservation/commande/save) for /reservation/commande/save with parameters array (  'module' => 'reswizard',  'action' => 'saveCommande',)
+Nov 29 21:41:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:41:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:41:11 symfony [info] {reswizardActions} Call "reswizardActions->executeSaveCommande()"
+Nov 29 21:41:11 symfony [info] {sfFrontWebController} Redirect to "http://resgala.local/frontoffice_dev.php/reservation/validate"
+Nov 29 21:41:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Nov 29 21:41:11 symfony [info] {sfWebResponse} Send header "Location: http://resgala.local/frontoffice_dev.php/reservation/validate"
+Nov 29 21:41:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:41:11 symfony [info] {sfWebDebugLogger} Configuration 5.56 ms (8)
+Nov 29 21:41:11 symfony [info] {sfWebDebugLogger} Factories 28.08 ms (1)
+Nov 29 21:41:11 symfony [info] {sfWebDebugLogger} Action "reswizard/saveCommande" 0.89 ms (1)
+Nov 29 21:41:11 symfony [info] {sfWebResponse} Send content (132 o)
+Nov 29 21:41:11 symfony [info] {sfPatternRouting} Match route "validate" (/reservation/validate) for /reservation/validate with parameters array (  'module' => 'reswizard',  'action' => 'validate',)
+Nov 29 21:41:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:41:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:41:11 symfony [info] {reswizardActions} Call "reswizardActions->executeValidate()"
+Nov 29 21:41:11 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php"
+Nov 29 21:41:11 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 17 (Undefined index: reservation)
+Nov 29 21:41:11 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 20 (Undefined index: reservation)
+Nov 29 21:41:11 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:41:11 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:41:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:41:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:41:11 symfony [info] {sfWebDebugLogger} Configuration 10.08 ms (9)
+Nov 29 21:41:11 symfony [info] {sfWebDebugLogger} Factories 32.66 ms (1)
+Nov 29 21:41:11 symfony [info] {sfWebDebugLogger} Action "reswizard/validate" 53.86 ms (1)
+Nov 29 21:41:11 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/validate" 22.75 ms (1)
+Nov 29 21:41:11 symfony [info] {sfWebResponse} Send content (31338 o)
+Nov 29 21:41:12 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:41:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:41:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:41:12 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:41:12 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:41:12 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:41:12 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:41:12 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:41:12 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:41:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:41:12 symfony [info] {sfWebDebugLogger} Configuration 6.70 ms (9)
+Nov 29 21:41:12 symfony [info] {sfWebDebugLogger} Factories 25.47 ms (1)
+Nov 29 21:41:12 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 25.08 ms (1)
+Nov 29 21:41:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:41:12 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 13.75 ms (1)
+Nov 29 21:41:12 symfony [info] {sfWebResponse} Send content (32952 o)
+Nov 29 21:41:13 symfony [info] {sfPatternRouting} Match route "commande_save" (/reservation/commande/save) for /reservation/commande/save with parameters array (  'module' => 'reswizard',  'action' => 'saveCommande',)
+Nov 29 21:41:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:41:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:41:13 symfony [info] {reswizardActions} Call "reswizardActions->executeSaveCommande()"
+Nov 29 21:41:13 symfony [info] {sfFrontWebController} Redirect to "http://resgala.local/frontoffice_dev.php/reservation/validate"
+Nov 29 21:41:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Nov 29 21:41:13 symfony [info] {sfWebResponse} Send header "Location: http://resgala.local/frontoffice_dev.php/reservation/validate"
+Nov 29 21:41:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:41:13 symfony [info] {sfWebDebugLogger} Configuration 5.50 ms (8)
+Nov 29 21:41:13 symfony [info] {sfWebDebugLogger} Factories 24.47 ms (1)
+Nov 29 21:41:13 symfony [info] {sfWebDebugLogger} Action "reswizard/saveCommande" 0.62 ms (1)
+Nov 29 21:41:13 symfony [info] {sfWebResponse} Send content (132 o)
+Nov 29 21:41:13 symfony [info] {sfPatternRouting} Match route "validate" (/reservation/validate) for /reservation/validate with parameters array (  'module' => 'reswizard',  'action' => 'validate',)
+Nov 29 21:41:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:41:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:41:13 symfony [info] {reswizardActions} Call "reswizardActions->executeValidate()"
+Nov 29 21:41:14 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php"
+Nov 29 21:41:14 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 17 (Undefined index: reservation)
+Nov 29 21:41:14 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 20 (Undefined index: reservation)
+Nov 29 21:41:14 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:41:14 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:41:14 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:41:14 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:41:14 symfony [info] {sfWebDebugLogger} Configuration 6.54 ms (9)
+Nov 29 21:41:14 symfony [info] {sfWebDebugLogger} Factories 24.87 ms (1)
+Nov 29 21:41:14 symfony [info] {sfWebDebugLogger} Action "reswizard/validate" 25.71 ms (1)
+Nov 29 21:41:14 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/validate" 9.65 ms (1)
+Nov 29 21:41:14 symfony [info] {sfWebResponse} Send content (31334 o)
+Nov 29 21:41:16 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:41:16 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:41:16 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:41:16 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:41:16 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:41:16 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:41:16 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:41:16 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:41:16 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:41:16 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:41:16 symfony [info] {sfWebDebugLogger} Configuration 6.32 ms (9)
+Nov 29 21:41:16 symfony [info] {sfWebDebugLogger} Factories 24.35 ms (1)
+Nov 29 21:41:16 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 24.04 ms (1)
+Nov 29 21:41:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:41:16 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 12.74 ms (1)
+Nov 29 21:41:16 symfony [info] {sfWebResponse} Send content (32951 o)
+Nov 29 21:43:17 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:43:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:43:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:43:17 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:43:17 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:43:17 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:43:17 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:43:17 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:43:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:43:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:43:17 symfony [info] {sfWebDebugLogger} Configuration 15.54 ms (10)
+Nov 29 21:43:17 symfony [info] {sfWebDebugLogger} Factories 26.86 ms (1)
+Nov 29 21:43:17 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 31.17 ms (1)
+Nov 29 21:43:17 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:43:17 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 23.19 ms (1)
+Nov 29 21:43:17 symfony [info] {sfWebResponse} Send content (33163 o)
+Nov 29 21:47:50 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:47:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:47:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:47:50 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:47:50 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:47:50 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:47:50 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:47:50 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:47:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:47:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:47:50 symfony [info] {sfWebDebugLogger} Configuration 6.70 ms (9)
+Nov 29 21:47:50 symfony [info] {sfWebDebugLogger} Factories 27.66 ms (1)
+Nov 29 21:47:50 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 27.16 ms (1)
+Nov 29 21:47:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:47:50 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 14.10 ms (1)
+Nov 29 21:47:50 symfony [info] {sfWebResponse} Send content (33160 o)
+Nov 29 21:48:58 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:48:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:48:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:48:58 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:48:58 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:48:58 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:48:58 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:48:58 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:48:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:48:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:48:58 symfony [info] {sfWebDebugLogger} Configuration 16.00 ms (9)
+Nov 29 21:48:58 symfony [info] {sfWebDebugLogger} Factories 24.99 ms (1)
+Nov 29 21:48:58 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 25.56 ms (1)
+Nov 29 21:48:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:48:58 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 12.55 ms (1)
+Nov 29 21:48:58 symfony [info] {sfWebResponse} Send content (33162 o)
+Nov 29 21:49:34 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:49:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:49:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:49:34 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:49:34 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:49:34 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:49:34 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:49:34 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:49:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:49:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:49:34 symfony [info] {sfWebDebugLogger} Configuration 6.39 ms (9)
+Nov 29 21:49:34 symfony [info] {sfWebDebugLogger} Factories 25.41 ms (1)
+Nov 29 21:49:34 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 25.71 ms (1)
+Nov 29 21:49:34 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:49:34 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 14.17 ms (1)
+Nov 29 21:49:34 symfony [info] {sfWebResponse} Send content (33160 o)
+Nov 29 21:49:50 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:49:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:49:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:49:50 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:49:50 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:49:50 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:49:50 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:49:50 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:49:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:49:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:49:50 symfony [info] {sfWebDebugLogger} Configuration 11.21 ms (9)
+Nov 29 21:49:50 symfony [info] {sfWebDebugLogger} Factories 33.27 ms (1)
+Nov 29 21:49:50 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 25.29 ms (1)
+Nov 29 21:49:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:49:50 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 15.57 ms (1)
+Nov 29 21:49:50 symfony [info] {sfWebResponse} Send content (33161 o)
+Nov 29 21:50:50 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:50:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:50:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:50:50 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:50:50 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:50:50 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:50:50 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:50:50 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:50:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:50:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:50:50 symfony [info] {sfWebDebugLogger} Configuration 7.44 ms (9)
+Nov 29 21:50:50 symfony [info] {sfWebDebugLogger} Factories 28.91 ms (1)
+Nov 29 21:50:50 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 28.18 ms (1)
+Nov 29 21:50:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:50:50 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 13.61 ms (1)
+Nov 29 21:50:50 symfony [info] {sfWebResponse} Send content (33160 o)
+Nov 29 21:51:19 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:51:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:51:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:51:19 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:51:19 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:51:19 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:51:19 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:51:19 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:51:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:51:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:51:19 symfony [info] {sfWebDebugLogger} Configuration 6.64 ms (9)
+Nov 29 21:51:19 symfony [info] {sfWebDebugLogger} Factories 25.07 ms (1)
+Nov 29 21:51:19 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 33.23 ms (1)
+Nov 29 21:51:19 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:51:19 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 15.90 ms (1)
+Nov 29 21:51:19 symfony [info] {sfWebResponse} Send content (33160 o)
+Nov 29 21:51:33 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:51:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:51:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:51:33 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:51:33 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:51:33 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:51:33 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:51:33 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:51:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:51:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:51:33 symfony [info] {sfWebDebugLogger} Configuration 6.43 ms (9)
+Nov 29 21:51:33 symfony [info] {sfWebDebugLogger} Factories 27.01 ms (1)
+Nov 29 21:51:33 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 24.90 ms (1)
+Nov 29 21:51:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:51:33 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 14.01 ms (1)
+Nov 29 21:51:33 symfony [info] {sfWebResponse} Send content (33160 o)
+Nov 29 21:52:08 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:52:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:52:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:52:08 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:52:08 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:52:08 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:52:08 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:52:08 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:52:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:52:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:52:08 symfony [info] {sfWebDebugLogger} Configuration 7.62 ms (9)
+Nov 29 21:52:08 symfony [info] {sfWebDebugLogger} Factories 29.14 ms (1)
+Nov 29 21:52:08 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 23.97 ms (1)
+Nov 29 21:52:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:52:08 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 14.19 ms (1)
+Nov 29 21:52:08 symfony [info] {sfWebResponse} Send content (33160 o)
+Nov 29 21:52:45 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:52:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:52:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:52:45 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:52:45 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:52:45 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:52:45 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:52:45 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:52:45 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:52:45 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:52:45 symfony [info] {sfWebDebugLogger} Configuration 7.47 ms (9)
+Nov 29 21:52:45 symfony [info] {sfWebDebugLogger} Factories 25.29 ms (1)
+Nov 29 21:52:45 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 24.24 ms (1)
+Nov 29 21:52:45 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:52:45 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 13.51 ms (1)
+Nov 29 21:52:45 symfony [info] {sfWebResponse} Send content (33160 o)
+Nov 29 21:52:51 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:52:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:52:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:52:51 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:52:51 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:52:51 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:52:51 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:52:51 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:52:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:52:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:52:51 symfony [info] {sfWebDebugLogger} Configuration 6.69 ms (9)
+Nov 29 21:52:51 symfony [info] {sfWebDebugLogger} Factories 24.76 ms (1)
+Nov 29 21:52:51 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 25.31 ms (1)
+Nov 29 21:52:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:52:51 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 13.69 ms (1)
+Nov 29 21:52:51 symfony [info] {sfWebResponse} Send content (33160 o)
+Nov 29 21:53:06 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:53:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:53:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:53:06 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:53:06 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:53:06 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:53:06 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:53:06 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:53:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:53:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:53:06 symfony [info] {sfWebDebugLogger} Configuration 16.73 ms (9)
+Nov 29 21:53:06 symfony [info] {sfWebDebugLogger} Factories 28.64 ms (1)
+Nov 29 21:53:06 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 35.60 ms (1)
+Nov 29 21:53:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:53:06 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 19.93 ms (1)
+Nov 29 21:53:06 symfony [info] {sfWebResponse} Send content (33162 o)
+Nov 29 21:53:08 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:53:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:53:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:53:08 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:53:08 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:53:08 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:53:08 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:53:08 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:53:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:53:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:53:08 symfony [info] {sfWebDebugLogger} Configuration 7.04 ms (9)
+Nov 29 21:53:08 symfony [info] {sfWebDebugLogger} Factories 34.91 ms (1)
+Nov 29 21:53:08 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 27.69 ms (1)
+Nov 29 21:53:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:53:08 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 14.17 ms (1)
+Nov 29 21:53:08 symfony [info] {sfWebResponse} Send content (33160 o)
+Nov 29 21:55:01 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 21:55:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 21:55:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 21:55:01 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 21:55:01 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 21:55:01 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 21:55:01 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:55:01 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 21:55:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 21:55:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 21:55:01 symfony [info] {sfWebDebugLogger} Configuration 9.47 ms (9)
+Nov 29 21:55:01 symfony [info] {sfWebDebugLogger} Factories 27.79 ms (1)
+Nov 29 21:55:01 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 25.39 ms (1)
+Nov 29 21:55:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 21:55:01 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 14.49 ms (1)
+Nov 29 21:55:01 symfony [info] {sfWebResponse} Send content (33160 o)
+Nov 29 22:00:29 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 22:00:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:00:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:00:29 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 22:00:30 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 22:00:30 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 22:00:30 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:00:30 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:00:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:00:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:00:30 symfony [info] {sfWebDebugLogger} Configuration 6.38 ms (9)
+Nov 29 22:00:30 symfony [info] {sfWebDebugLogger} Factories 27.30 ms (1)
+Nov 29 22:00:30 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 27.09 ms (1)
+Nov 29 22:00:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 22:00:30 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 13.26 ms (1)
+Nov 29 22:00:30 symfony [info] {sfWebResponse} Send content (33160 o)
