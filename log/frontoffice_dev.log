@@ -6331,3 +6331,445 @@ Nov 29 22:04:33 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 29
 Nov 29 22:04:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
 Nov 29 22:04:33 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 15.68 ms (1)
 Nov 29 22:04:33 symfony [info] {sfWebResponse} Send content (33160 o)
+Nov 29 22:07:39 symfony [info] {sfPatternRouting} Match route "commande_save" (/reservation/commande/save) for /reservation/commande/save with parameters array (  'module' => 'reswizard',  'action' => 'saveCommande',)
+Nov 29 22:07:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:07:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:07:39 symfony [info] {reswizardActions} Call "reswizardActions->executeSaveCommande()"
+Nov 29 22:07:39 symfony [info] {sfFrontWebController} Redirect to "http://resgala.local/frontoffice_dev.php/reservation/validate"
+Nov 29 22:07:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Nov 29 22:07:39 symfony [info] {sfWebResponse} Send header "Location: http://resgala.local/frontoffice_dev.php/reservation/validate"
+Nov 29 22:07:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:07:39 symfony [info] {sfWebDebugLogger} Configuration 5.56 ms (8)
+Nov 29 22:07:39 symfony [info] {sfWebDebugLogger} Factories 24.74 ms (1)
+Nov 29 22:07:39 symfony [info] {sfWebDebugLogger} Action "reswizard/saveCommande" 0.56 ms (1)
+Nov 29 22:07:39 symfony [info] {sfWebResponse} Send content (132 o)
+Nov 29 22:07:39 symfony [info] {sfPatternRouting} Match route "validate" (/reservation/validate) for /reservation/validate with parameters array (  'module' => 'reswizard',  'action' => 'validate',)
+Nov 29 22:07:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:07:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:07:39 symfony [info] {reswizardActions} Call "reswizardActions->executeValidate()"
+Nov 29 22:07:39 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php"
+Nov 29 22:07:39 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 17 (Undefined index: reservation)
+Nov 29 22:07:39 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 20 (Undefined index: reservation)
+Nov 29 22:07:39 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:07:39 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:07:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:07:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:07:39 symfony [info] {sfWebDebugLogger} Configuration 6.62 ms (9)
+Nov 29 22:07:39 symfony [info] {sfWebDebugLogger} Factories 24.96 ms (1)
+Nov 29 22:07:39 symfony [info] {sfWebDebugLogger} Action "reswizard/validate" 22.30 ms (1)
+Nov 29 22:07:39 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/validate" 9.89 ms (1)
+Nov 29 22:07:39 symfony [info] {sfWebResponse} Send content (31543 o)
+Nov 29 22:09:58 symfony [info] {sfPatternRouting} Match route "validate" (/reservation/validate) for /reservation/validate with parameters array (  'module' => 'reswizard',  'action' => 'validate',)
+Nov 29 22:09:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:09:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:09:58 symfony [info] {reswizardActions} Call "reswizardActions->executeValidate()"
+Nov 29 22:09:58 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php"
+Nov 29 22:09:58 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 17 (Undefined index: reservation)
+Nov 29 22:09:58 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 20 (Undefined index: reservation)
+Nov 29 22:09:58 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:09:58 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:09:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:09:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:09:58 symfony [info] {sfWebDebugLogger} Configuration 6.37 ms (9)
+Nov 29 22:09:58 symfony [info] {sfWebDebugLogger} Factories 24.23 ms (1)
+Nov 29 22:09:58 symfony [info] {sfWebDebugLogger} Action "reswizard/validate" 22.87 ms (1)
+Nov 29 22:09:58 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/validate" 10.16 ms (1)
+Nov 29 22:09:58 symfony [info] {sfWebResponse} Send content (31544 o)
+Nov 29 22:10:28 symfony [info] {sfPatternRouting} Match route "validate" (/reservation/validate) for /reservation/validate with parameters array (  'module' => 'reswizard',  'action' => 'validate',)
+Nov 29 22:10:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:10:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:10:28 symfony [info] {reswizardActions} Call "reswizardActions->executeValidate()"
+Nov 29 22:10:28 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php"
+Nov 29 22:10:28 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 17 (Undefined index: reservation)
+Nov 29 22:10:28 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 20 (Undefined index: reservation)
+Nov 29 22:10:28 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:10:28 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:10:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:10:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:10:28 symfony [info] {sfWebDebugLogger} Configuration 6.35 ms (9)
+Nov 29 22:10:28 symfony [info] {sfWebDebugLogger} Factories 28.48 ms (1)
+Nov 29 22:10:28 symfony [info] {sfWebDebugLogger} Action "reswizard/validate" 24.12 ms (1)
+Nov 29 22:10:28 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/validate" 9.89 ms (1)
+Nov 29 22:10:28 symfony [info] {sfWebResponse} Send content (31543 o)
+Nov 29 22:13:46 symfony [info] {sfPatternRouting} Match route "validate" (/reservation/validate) for /reservation/validate with parameters array (  'module' => 'reswizard',  'action' => 'validate',)
+Nov 29 22:13:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:13:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:13:46 symfony [info] {reswizardActions} Call "reswizardActions->executeValidate()"
+Nov 29 22:13:46 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php"
+Nov 29 22:13:46 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 17 (Undefined index: reservation)
+Nov 29 22:13:46 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 20 (Undefined index: reservation)
+Nov 29 22:13:46 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:13:46 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:13:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:13:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:13:46 symfony [info] {sfWebDebugLogger} Configuration 6.69 ms (9)
+Nov 29 22:13:46 symfony [info] {sfWebDebugLogger} Factories 30.30 ms (1)
+Nov 29 22:13:46 symfony [info] {sfWebDebugLogger} Action "reswizard/validate" 28.50 ms (1)
+Nov 29 22:13:46 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/validate" 10.33 ms (1)
+Nov 29 22:13:46 symfony [info] {sfWebResponse} Send content (31544 o)
+Nov 29 22:14:38 symfony [info] {sfPatternRouting} Match route "validate" (/reservation/validate) for /reservation/validate with parameters array (  'module' => 'reswizard',  'action' => 'validate',)
+Nov 29 22:14:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:14:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:14:38 symfony [info] {reswizardActions} Call "reswizardActions->executeValidate()"
+Nov 29 22:14:38 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php"
+Nov 29 22:14:38 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 17 (Undefined index: reservation)
+Nov 29 22:14:38 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 20 (Undefined index: reservation)
+Nov 29 22:14:38 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:14:38 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:14:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:14:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:14:38 symfony [info] {sfWebDebugLogger} Configuration 6.58 ms (9)
+Nov 29 22:14:38 symfony [info] {sfWebDebugLogger} Factories 26.96 ms (1)
+Nov 29 22:14:38 symfony [info] {sfWebDebugLogger} Action "reswizard/validate" 24.31 ms (1)
+Nov 29 22:14:38 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/validate" 10.35 ms (1)
+Nov 29 22:14:38 symfony [info] {sfWebResponse} Send content (31544 o)
+Nov 29 22:15:17 symfony [info] {sfPatternRouting} Match route "validate" (/reservation/validate) for /reservation/validate with parameters array (  'module' => 'reswizard',  'action' => 'validate',)
+Nov 29 22:15:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:15:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:15:17 symfony [info] {reswizardActions} Call "reswizardActions->executeValidate()"
+Nov 29 22:15:17 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php"
+Nov 29 22:15:17 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 17 (Undefined index: reservation)
+Nov 29 22:15:17 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 20 (Undefined index: reservation)
+Nov 29 22:15:17 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:15:17 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:15:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:15:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:15:17 symfony [info] {sfWebDebugLogger} Configuration 6.48 ms (9)
+Nov 29 22:15:17 symfony [info] {sfWebDebugLogger} Factories 27.94 ms (1)
+Nov 29 22:15:17 symfony [info] {sfWebDebugLogger} Action "reswizard/validate" 24.71 ms (1)
+Nov 29 22:15:17 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/validate" 10.67 ms (1)
+Nov 29 22:15:17 symfony [info] {sfWebResponse} Send content (31545 o)
+Nov 29 22:15:51 symfony [info] {sfPatternRouting} Match route "validate" (/reservation/validate) for /reservation/validate with parameters array (  'module' => 'reswizard',  'action' => 'validate',)
+Nov 29 22:15:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:15:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:15:51 symfony [info] {reswizardActions} Call "reswizardActions->executeValidate()"
+Nov 29 22:15:51 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php"
+Nov 29 22:15:51 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 17 (Undefined index: reservation)
+Nov 29 22:15:51 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 20 (Undefined index: reservation)
+Nov 29 22:15:51 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:15:51 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:15:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:15:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:15:51 symfony [info] {sfWebDebugLogger} Configuration 7.06 ms (9)
+Nov 29 22:15:51 symfony [info] {sfWebDebugLogger} Factories 27.28 ms (1)
+Nov 29 22:15:51 symfony [info] {sfWebDebugLogger} Action "reswizard/validate" 25.70 ms (1)
+Nov 29 22:15:51 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/validate" 10.68 ms (1)
+Nov 29 22:15:51 symfony [info] {sfWebResponse} Send content (31544 o)
+Nov 29 22:16:00 symfony [info] {sfPatternRouting} Match route "validate" (/reservation/validate) for /reservation/validate with parameters array (  'module' => 'reswizard',  'action' => 'validate',)
+Nov 29 22:16:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:16:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:16:00 symfony [info] {reswizardActions} Call "reswizardActions->executeValidate()"
+Nov 29 22:16:00 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php"
+Nov 29 22:16:00 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 17 (Undefined index: reservation)
+Nov 29 22:16:00 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 20 (Undefined index: reservation)
+Nov 29 22:16:00 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:16:00 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:16:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:16:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:16:00 symfony [info] {sfWebDebugLogger} Configuration 12.32 ms (9)
+Nov 29 22:16:00 symfony [info] {sfWebDebugLogger} Factories 34.65 ms (1)
+Nov 29 22:16:00 symfony [info] {sfWebDebugLogger} Action "reswizard/validate" 25.55 ms (1)
+Nov 29 22:16:00 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/validate" 11.09 ms (1)
+Nov 29 22:16:00 symfony [info] {sfWebResponse} Send content (31545 o)
+Nov 29 22:17:28 symfony [info] {sfPatternRouting} Match route "validate" (/reservation/validate) for /reservation/validate with parameters array (  'module' => 'reswizard',  'action' => 'validate',)
+Nov 29 22:17:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:17:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:17:28 symfony [info] {reswizardActions} Call "reswizardActions->executeValidate()"
+Nov 29 22:17:28 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php"
+Nov 29 22:17:28 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 17 (Undefined index: reservation)
+Nov 29 22:17:28 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 20 (Undefined index: reservation)
+Nov 29 22:17:28 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:17:28 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:17:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:17:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:17:28 symfony [info] {sfWebDebugLogger} Configuration 6.29 ms (9)
+Nov 29 22:17:28 symfony [info] {sfWebDebugLogger} Factories 24.68 ms (1)
+Nov 29 22:17:28 symfony [info] {sfWebDebugLogger} Action "reswizard/validate" 22.36 ms (1)
+Nov 29 22:17:28 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/validate" 9.62 ms (1)
+Nov 29 22:17:28 symfony [info] {sfWebResponse} Send content (31542 o)
+Nov 29 22:17:59 symfony [info] {sfPatternRouting} Match route "validate" (/reservation/validate) for /reservation/validate with parameters array (  'module' => 'reswizard',  'action' => 'validate',)
+Nov 29 22:17:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:17:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:17:59 symfony [info] {reswizardActions} Call "reswizardActions->executeValidate()"
+Nov 29 22:17:59 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php"
+Nov 29 22:17:59 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 17 (Undefined index: reservation)
+Nov 29 22:17:59 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 20 (Undefined index: reservation)
+Nov 29 22:17:59 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:17:59 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:17:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:17:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:17:59 symfony [info] {sfWebDebugLogger} Configuration 6.33 ms (9)
+Nov 29 22:17:59 symfony [info] {sfWebDebugLogger} Factories 24.40 ms (1)
+Nov 29 22:17:59 symfony [info] {sfWebDebugLogger} Action "reswizard/validate" 22.28 ms (1)
+Nov 29 22:17:59 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/validate" 9.71 ms (1)
+Nov 29 22:17:59 symfony [info] {sfWebResponse} Send content (31543 o)
+Nov 29 22:18:06 symfony [info] {sfPatternRouting} Match route "validate" (/reservation/validate) for /reservation/validate with parameters array (  'module' => 'reswizard',  'action' => 'validate',)
+Nov 29 22:18:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:18:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:18:06 symfony [info] {reswizardActions} Call "reswizardActions->executeValidate()"
+Nov 29 22:18:06 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php"
+Nov 29 22:18:06 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 17 (Undefined index: reservation)
+Nov 29 22:18:06 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 20 (Undefined index: reservation)
+Nov 29 22:18:06 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:18:06 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:18:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:18:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:18:06 symfony [info] {sfWebDebugLogger} Configuration 6.65 ms (9)
+Nov 29 22:18:06 symfony [info] {sfWebDebugLogger} Factories 26.34 ms (1)
+Nov 29 22:18:06 symfony [info] {sfWebDebugLogger} Action "reswizard/validate" 24.74 ms (1)
+Nov 29 22:18:06 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/validate" 10.39 ms (1)
+Nov 29 22:18:06 symfony [info] {sfWebResponse} Send content (31544 o)
+Nov 29 22:18:19 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 22:18:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:18:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:18:19 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 22:18:19 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 22:18:19 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 22:18:19 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:18:19 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:18:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:18:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:18:19 symfony [info] {sfWebDebugLogger} Configuration 6.35 ms (9)
+Nov 29 22:18:19 symfony [info] {sfWebDebugLogger} Factories 24.67 ms (1)
+Nov 29 22:18:19 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 25.94 ms (1)
+Nov 29 22:18:19 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 22:18:19 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 13.69 ms (1)
+Nov 29 22:18:19 symfony [info] {sfWebResponse} Send content (33161 o)
+Nov 29 22:18:21 symfony [info] {sfPatternRouting} Match route "start_reserv" (/reservation/identity) for /reservation/identity with parameters array (  'module' => 'reswizard',  'action' => 'start',)
+Nov 29 22:18:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:18:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:18:21 symfony [info] {reswizardActions} Call "reswizardActions->executeStart()"
+Nov 29 22:18:21 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/startSuccess.php"
+Nov 29 22:18:21 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:18:21 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:18:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:18:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:18:21 symfony [info] {sfWebDebugLogger} Configuration 6.31 ms (9)
+Nov 29 22:18:21 symfony [info] {sfWebDebugLogger} Factories 24.28 ms (1)
+Nov 29 22:18:21 symfony [info] {sfWebDebugLogger} Action "reswizard/start" 21.72 ms (1)
+Nov 29 22:18:21 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/start" 9.97 ms (1)
+Nov 29 22:18:21 symfony [info] {sfWebResponse} Send content (32549 o)
+Nov 29 22:18:32 symfony [info] {sfPatternRouting} Match route "identity_save" (/reservation/identity/save) for /reservation/identity/save with parameters array (  'module' => 'reswizard',  'action' => 'saveStart',)
+Nov 29 22:18:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:18:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:18:32 symfony [info] {reswizardActions} Call "reswizardActions->executeSaveStart()"
+Nov 29 22:18:32 symfony [info] {Doctrine_Connection_Statement} execute : SELECT r.id AS r__id, r.nom AS r__nom, r.prenom AS r__prenom, r.login AS r__login, r.num_insa AS r__num_insa, r.paye_with AS r__paye_with, r.banque_nom AS r__banque_nom, r.validated_at AS r__validated_at, r.payed_at AS r__payed_at FROM reservation r WHERE (r.login = ?) - (ssignoud)
+Nov 29 22:18:32 symfony [info] {sfFrontWebController} Redirect to "http://resgala.local/frontoffice_dev.php/reservation/commande"
+Nov 29 22:18:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Nov 29 22:18:32 symfony [info] {sfWebResponse} Send header "Location: http://resgala.local/frontoffice_dev.php/reservation/commande"
+Nov 29 22:18:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:18:32 symfony [info] {sfWebDebugLogger} Configuration 5.51 ms (8)
+Nov 29 22:18:32 symfony [info] {sfWebDebugLogger} Factories 24.37 ms (1)
+Nov 29 22:18:32 symfony [info] {sfWebDebugLogger} Action "reswizard/saveStart" 43.35 ms (1)
+Nov 29 22:18:32 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 22:18:32 symfony [info] {sfWebResponse} Send content (132 o)
+Nov 29 22:18:32 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 22:18:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:18:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:18:32 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 22:18:32 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 22:18:32 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 22:18:32 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:18:32 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:18:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:18:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:18:32 symfony [info] {sfWebDebugLogger} Configuration 6.37 ms (9)
+Nov 29 22:18:32 symfony [info] {sfWebDebugLogger} Factories 24.12 ms (1)
+Nov 29 22:18:32 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 24.04 ms (1)
+Nov 29 22:18:32 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 22:18:32 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 12.97 ms (1)
+Nov 29 22:18:32 symfony [info] {sfWebResponse} Send content (33192 o)
+Nov 29 22:18:33 symfony [info] {sfPatternRouting} Match route "commande_save" (/reservation/commande/save) for /reservation/commande/save with parameters array (  'module' => 'reswizard',  'action' => 'saveCommande',)
+Nov 29 22:18:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:18:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:18:33 symfony [info] {reswizardActions} Call "reswizardActions->executeSaveCommande()"
+Nov 29 22:18:33 symfony [info] {sfFrontWebController} Redirect to "http://resgala.local/frontoffice_dev.php/reservation/validate"
+Nov 29 22:18:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Nov 29 22:18:33 symfony [info] {sfWebResponse} Send header "Location: http://resgala.local/frontoffice_dev.php/reservation/validate"
+Nov 29 22:18:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:18:33 symfony [info] {sfWebDebugLogger} Configuration 5.91 ms (8)
+Nov 29 22:18:33 symfony [info] {sfWebDebugLogger} Factories 25.01 ms (1)
+Nov 29 22:18:33 symfony [info] {sfWebDebugLogger} Action "reswizard/saveCommande" 0.61 ms (1)
+Nov 29 22:18:33 symfony [info] {sfWebResponse} Send content (132 o)
+Nov 29 22:18:33 symfony [info] {sfPatternRouting} Match route "validate" (/reservation/validate) for /reservation/validate with parameters array (  'module' => 'reswizard',  'action' => 'validate',)
+Nov 29 22:18:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:18:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:18:33 symfony [info] {reswizardActions} Call "reswizardActions->executeValidate()"
+Nov 29 22:18:33 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php"
+Nov 29 22:18:33 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 17 (Undefined index: reservation)
+Nov 29 22:18:33 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 20 (Undefined index: reservation)
+Nov 29 22:18:33 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:18:33 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:18:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:18:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:18:33 symfony [info] {sfWebDebugLogger} Configuration 6.53 ms (9)
+Nov 29 22:18:33 symfony [info] {sfWebDebugLogger} Factories 24.41 ms (1)
+Nov 29 22:18:33 symfony [info] {sfWebDebugLogger} Action "reswizard/validate" 22.69 ms (1)
+Nov 29 22:18:33 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/validate" 9.43 ms (1)
+Nov 29 22:18:33 symfony [info] {sfWebResponse} Send content (31543 o)
+Nov 29 22:18:51 symfony [info] {sfPatternRouting} Match route "validate" (/reservation/validate) for /reservation/validate with parameters array (  'module' => 'reswizard',  'action' => 'validate',)
+Nov 29 22:18:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:18:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:18:51 symfony [info] {reswizardActions} Call "reswizardActions->executeValidate()"
+Nov 29 22:18:51 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php"
+Nov 29 22:18:51 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 17 (Undefined index: reservation)
+Nov 29 22:18:51 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 20 (Undefined index: reservation)
+Nov 29 22:18:51 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:18:51 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:18:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:18:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:18:51 symfony [info] {sfWebDebugLogger} Configuration 6.67 ms (9)
+Nov 29 22:18:51 symfony [info] {sfWebDebugLogger} Factories 25.96 ms (1)
+Nov 29 22:18:51 symfony [info] {sfWebDebugLogger} Action "reswizard/validate" 24.14 ms (1)
+Nov 29 22:18:51 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/validate" 10.26 ms (1)
+Nov 29 22:18:51 symfony [info] {sfWebResponse} Send content (31545 o)
+Nov 29 22:19:01 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 22:19:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:19:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:19:01 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 22:19:01 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 22:19:01 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 22:19:01 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:19:01 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:19:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:19:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:19:01 symfony [info] {sfWebDebugLogger} Configuration 6.92 ms (9)
+Nov 29 22:19:01 symfony [info] {sfWebDebugLogger} Factories 26.59 ms (1)
+Nov 29 22:19:01 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 24.48 ms (1)
+Nov 29 22:19:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 22:19:01 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 13.27 ms (1)
+Nov 29 22:19:01 symfony [info] {sfWebResponse} Send content (33161 o)
+Nov 29 22:19:03 symfony [info] {sfPatternRouting} Match route "start_reserv" (/reservation/identity) for /reservation/identity with parameters array (  'module' => 'reswizard',  'action' => 'start',)
+Nov 29 22:19:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:19:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:19:03 symfony [info] {reswizardActions} Call "reswizardActions->executeStart()"
+Nov 29 22:19:03 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/startSuccess.php"
+Nov 29 22:19:03 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:19:03 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:19:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:19:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:19:03 symfony [info] {sfWebDebugLogger} Configuration 6.32 ms (9)
+Nov 29 22:19:03 symfony [info] {sfWebDebugLogger} Factories 24.38 ms (1)
+Nov 29 22:19:03 symfony [info] {sfWebDebugLogger} Action "reswizard/start" 22.30 ms (1)
+Nov 29 22:19:03 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/start" 10.32 ms (1)
+Nov 29 22:19:03 symfony [info] {sfWebResponse} Send content (32550 o)
+Nov 29 22:19:30 symfony [info] {sfPatternRouting} Match route "start_reserv" (/reservation/identity) for /reservation/identity with parameters array (  'module' => 'reswizard',  'action' => 'start',)
+Nov 29 22:19:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:19:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:19:30 symfony [info] {reswizardActions} Call "reswizardActions->executeStart()"
+Nov 29 22:19:30 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/startSuccess.php"
+Nov 29 22:19:30 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:19:30 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:19:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:19:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:19:30 symfony [info] {sfWebDebugLogger} Configuration 10.53 ms (9)
+Nov 29 22:19:30 symfony [info] {sfWebDebugLogger} Factories 28.72 ms (1)
+Nov 29 22:19:30 symfony [info] {sfWebDebugLogger} Action "reswizard/start" 53.06 ms (1)
+Nov 29 22:19:30 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/start" 20.91 ms (1)
+Nov 29 22:19:30 symfony [info] {sfWebResponse} Send content (32584 o)
+Nov 29 22:19:33 symfony [info] {sfPatternRouting} Match route "identity_save" (/reservation/identity/save) for /reservation/identity/save with parameters array (  'module' => 'reswizard',  'action' => 'saveStart',)
+Nov 29 22:19:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:19:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:19:33 symfony [info] {reswizardActions} Call "reswizardActions->executeSaveStart()"
+Nov 29 22:19:33 symfony [info] {Doctrine_Connection_Statement} execute : SELECT r.id AS r__id, r.nom AS r__nom, r.prenom AS r__prenom, r.login AS r__login, r.num_insa AS r__num_insa, r.paye_with AS r__paye_with, r.banque_nom AS r__banque_nom, r.validated_at AS r__validated_at, r.payed_at AS r__payed_at FROM reservation r WHERE (r.login = ?) - (ssignoud)
+Nov 29 22:19:33 symfony [info] {sfFrontWebController} Redirect to "http://resgala.local/frontoffice_dev.php/reservation/commande"
+Nov 29 22:19:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Nov 29 22:19:33 symfony [info] {sfWebResponse} Send header "Location: http://resgala.local/frontoffice_dev.php/reservation/commande"
+Nov 29 22:19:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:19:33 symfony [info] {sfWebDebugLogger} Configuration 6.55 ms (8)
+Nov 29 22:19:33 symfony [info] {sfWebDebugLogger} Factories 24.52 ms (1)
+Nov 29 22:19:33 symfony [info] {sfWebDebugLogger} Action "reswizard/saveStart" 42.95 ms (1)
+Nov 29 22:19:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 22:19:33 symfony [info] {sfWebResponse} Send content (132 o)
+Nov 29 22:19:33 symfony [info] {sfPatternRouting} Match route "commande" (/reservation/commande) for /reservation/commande with parameters array (  'module' => 'reswizard',  'action' => 'commande',)
+Nov 29 22:19:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:19:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:19:33 symfony [info] {reswizardActions} Call "reswizardActions->executeCommande()"
+Nov 29 22:19:33 symfony [info] {Doctrine_Connection_Sqlite} query : SELECT p.id AS p__id, p.intitule AS p__intitule, p.description AS p__description, p.prix AS p__prix FROM produit p - ()
+Nov 29 22:19:33 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/commandeSuccess.php"
+Nov 29 22:19:33 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:19:33 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:19:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:19:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:19:33 symfony [info] {sfWebDebugLogger} Configuration 6.28 ms (9)
+Nov 29 22:19:33 symfony [info] {sfWebDebugLogger} Factories 24.69 ms (1)
+Nov 29 22:19:33 symfony [info] {sfWebDebugLogger} Action "reswizard/commande" 24.74 ms (1)
+Nov 29 22:19:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (1)
+Nov 29 22:19:33 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/commande" 13.25 ms (1)
+Nov 29 22:19:33 symfony [info] {sfWebResponse} Send content (33193 o)
+Nov 29 22:19:34 symfony [info] {sfPatternRouting} Match route "commande_save" (/reservation/commande/save) for /reservation/commande/save with parameters array (  'module' => 'reswizard',  'action' => 'saveCommande',)
+Nov 29 22:19:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:19:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:19:34 symfony [info] {reswizardActions} Call "reswizardActions->executeSaveCommande()"
+Nov 29 22:19:34 symfony [info] {sfFrontWebController} Redirect to "http://resgala.local/frontoffice_dev.php/reservation/validate"
+Nov 29 22:19:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Nov 29 22:19:34 symfony [info] {sfWebResponse} Send header "Location: http://resgala.local/frontoffice_dev.php/reservation/validate"
+Nov 29 22:19:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:19:34 symfony [info] {sfWebDebugLogger} Configuration 7.61 ms (8)
+Nov 29 22:19:34 symfony [info] {sfWebDebugLogger} Factories 24.66 ms (1)
+Nov 29 22:19:34 symfony [info] {sfWebDebugLogger} Action "reswizard/saveCommande" 0.56 ms (1)
+Nov 29 22:19:34 symfony [info] {sfWebResponse} Send content (132 o)
+Nov 29 22:19:34 symfony [info] {sfPatternRouting} Match route "validate" (/reservation/validate) for /reservation/validate with parameters array (  'module' => 'reswizard',  'action' => 'validate',)
+Nov 29 22:19:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:19:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:19:34 symfony [info] {reswizardActions} Call "reswizardActions->executeValidate()"
+Nov 29 22:19:34 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php"
+Nov 29 22:19:34 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 17 (Undefined index: reservation)
+Nov 29 22:19:34 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 20 (Undefined index: reservation)
+Nov 29 22:19:34 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:19:34 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:19:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:19:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:19:34 symfony [info] {sfWebDebugLogger} Configuration 6.57 ms (9)
+Nov 29 22:19:34 symfony [info] {sfWebDebugLogger} Factories 24.44 ms (1)
+Nov 29 22:19:34 symfony [info] {sfWebDebugLogger} Action "reswizard/validate" 26.94 ms (1)
+Nov 29 22:19:34 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/validate" 9.96 ms (1)
+Nov 29 22:19:34 symfony [info] {sfWebResponse} Send content (31543 o)
+Nov 29 22:20:00 symfony [info] {sfPatternRouting} Match route "validate" (/reservation/validate) for /reservation/validate with parameters array (  'module' => 'reswizard',  'action' => 'validate',)
+Nov 29 22:20:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:20:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:20:00 symfony [info] {reswizardActions} Call "reswizardActions->executeValidate()"
+Nov 29 22:20:00 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php"
+Nov 29 22:20:00 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 17 (Undefined index: reservation)
+Nov 29 22:20:00 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 20 (Undefined index: reservation)
+Nov 29 22:20:00 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:20:00 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:20:00 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:20:00 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:20:00 symfony [info] {sfWebDebugLogger} Configuration 6.51 ms (9)
+Nov 29 22:20:00 symfony [info] {sfWebDebugLogger} Factories 26.25 ms (1)
+Nov 29 22:20:00 symfony [info] {sfWebDebugLogger} Action "reswizard/validate" 23.45 ms (1)
+Nov 29 22:20:00 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/validate" 10.61 ms (1)
+Nov 29 22:20:00 symfony [info] {sfWebResponse} Send content (31545 o)
+Nov 29 22:20:29 symfony [info] {sfPatternRouting} Match route "validate" (/reservation/validate) for /reservation/validate with parameters array (  'module' => 'reswizard',  'action' => 'validate',)
+Nov 29 22:20:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:20:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:20:30 symfony [info] {reswizardActions} Call "reswizardActions->executeValidate()"
+Nov 29 22:20:30 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php"
+Nov 29 22:20:30 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 17 (Undefined index: reservation)
+Nov 29 22:20:30 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 20 (Undefined index: reservation)
+Nov 29 22:20:30 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:20:30 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:20:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:20:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:20:30 symfony [info] {sfWebDebugLogger} Configuration 6.41 ms (9)
+Nov 29 22:20:30 symfony [info] {sfWebDebugLogger} Factories 25.73 ms (1)
+Nov 29 22:20:30 symfony [info] {sfWebDebugLogger} Action "reswizard/validate" 23.86 ms (1)
+Nov 29 22:20:30 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/validate" 10.98 ms (1)
+Nov 29 22:20:30 symfony [info] {sfWebResponse} Send content (31544 o)
+Nov 29 22:20:44 symfony [info] {sfPatternRouting} Match route "validate" (/reservation/validate) for /reservation/validate with parameters array (  'module' => 'reswizard',  'action' => 'validate',)
+Nov 29 22:20:44 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 29 22:20:44 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 29 22:20:44 symfony [info] {reswizardActions} Call "reswizardActions->executeValidate()"
+Nov 29 22:20:44 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php"
+Nov 29 22:20:44 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 17 (Undefined index: reservation)
+Nov 29 22:20:44 symfony [notice] {sfWebDebugLogger}  Notice at /srv/http/resgala/apps/frontoffice/modules/reswizard/templates/validateSuccess.php on line 20 (Undefined index: reservation)
+Nov 29 22:20:44 symfony [info] {sfPHPView} Decorate content with "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:20:44 symfony [info] {sfPHPView} Render "/srv/http/resgala/apps/frontoffice/templates/layout.php"
+Nov 29 22:20:44 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 29 22:20:44 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 29 22:20:44 symfony [info] {sfWebDebugLogger} Configuration 6.39 ms (9)
+Nov 29 22:20:44 symfony [info] {sfWebDebugLogger} Factories 24.81 ms (1)
+Nov 29 22:20:44 symfony [info] {sfWebDebugLogger} Action "reswizard/validate" 22.59 ms (1)
+Nov 29 22:20:44 symfony [info] {sfWebDebugLogger} View "Success" for "reswizard/validate" 9.78 ms (1)
+Nov 29 22:20:44 symfony [info] {sfWebResponse} Send content (31543 o)

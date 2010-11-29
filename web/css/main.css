@@ -123,6 +123,8 @@ fieldset legend {
 .wraplabel {
   font-weight: bold;
   margin-bottom: 0px;
+  margin-top: 0px;
+  padding-top: 0em;
 }
 .wrapwidget {
   margin-top: 3px;
@@ -131,12 +133,15 @@ fieldset legend {
 .wraphelp {
   margin-top: 3px;
   font-size: smaller;
+  margin-bottom: 0px;
 }
 
 .wrapfield {
   padding-left: 20px;
   border-left: 10px solid rgba(0,0,0,0.2);
   border-radius: 30px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .wrapfield input[type=text]{
