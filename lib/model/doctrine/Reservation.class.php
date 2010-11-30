@@ -25,6 +25,8 @@ class Reservation extends BaseReservation
   }
 
   public function isPayed(){
-    if($this->getValidatedAt() + 15*24*3600) < date())
+    if($this->getPayedAt())
+      return true;
+    return false;
   }
 }
