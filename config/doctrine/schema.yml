@@ -6,7 +6,7 @@ Reservation:
     nom: string(30)
     prenom: string(20)
     login: string(20)
-    num_insa: string(7)
+    repas_with: string(256)
     paye_with: 
       type: enum 
       values:

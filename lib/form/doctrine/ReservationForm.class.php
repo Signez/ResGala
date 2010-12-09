@@ -16,7 +16,7 @@ class ReservationForm extends BaseReservationForm
     $this->getWidgetSchema()->addFormFormatter('deflist', $custom_decorator);
     $this->getWidgetSchema()->setFormFormatterName('deflist');
     
-    $this->useFields(array("nom", "prenom", "login", "num_insa", "paye_with", "banque_nom"));
+    $this->useFields(array("nom", "prenom", "login", "paye_with", "banque_nom"));
     $this->widgetSchema->setLabels(array(
                       "nom" => "Votre nom :",
                       "prenom" => "Votre prénom :",
@@ -43,7 +43,7 @@ class IdentityReservationForm extends ReservationForm
   public function configure()
   {
     parent::configure();
-    $this->useFields(array("nom", "prenom", "login", "num_insa"));
+    $this->useFields(array("nom", "prenom", "login"));
     $this->validatorSchema->setPostValidator(
       new sfValidatorDoctrineUnique(
         array(
@@ -52,7 +52,8 @@ class IdentityReservationForm extends ReservationForm
           'throw_global_error' => false
         ),
         array(
-          'invalid' => "Quelqu'un s'est déjà inscrit avec ce login. Nous vous invitons à annuler votre réservation et à en recréer une."
+          'invalid' => "Quelqu'un s'est déjà inscrit avec ce login. "
+                      ."Nous vous invitons à annuler votre réservation auprès du BdE et à en recréer une."
         )
       )
     );

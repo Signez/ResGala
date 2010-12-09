@@ -9,13 +9,10 @@
   <fieldset>
     <legend>Qui êtes-vous ?</legend>
     <p>La réservation est nominative, et bien que vous puissiez réserver plusieurs places à l'étape suivante,
-      il est nécessaire que nous ayons connaissances de votre identité pour que vous puissiez retirer ou
-      annuler votre réservation.</p>
+      il est nécessaire que nous ayons connaissances de votre identité pour que vous puissiez retirer votre réservation.</p>
+    <?php echo $form["login"]->renderRow(array("placeholder" => "pdupont")); ?>
     <?php echo $form["nom"]->renderRow(array("placeholder" => "Dupont")); ?>
     <?php echo $form["prenom"]->renderRow(array("placeholder" => "Paul")); ?>
-    <p>Si vous êtes étudiant INSA, vous pouvez remplir les champs ci-dessous pour vous permettre de gagner du temps.</p>
-    <?php echo $form["login"]->renderRow(array("placeholder" => "pdupont")); ?>
-    <?php echo $form["num_insa"]->renderRow(array("placeholder" => "1234567")); ?>
   </fieldset>
   <p class="wrapnext"><?php echo $form->renderHiddenFields(); ?><input value="Étape suivante →" type="submit" /></p>
 </form>

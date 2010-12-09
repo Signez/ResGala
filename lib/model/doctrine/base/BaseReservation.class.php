@@ -9,7 +9,7 @@
  * @property string $nom
  * @property string $prenom
  * @property string $login
- * @property string $num_insa
+ * @property string $repas_with
  * @property enum $paye_with
  * @property string $banque_nom
  * @property timestamp $validated_at
@@ -21,7 +21,7 @@
  * @method string              getNom()            Returns the current record's "nom" value
  * @method string              getPrenom()         Returns the current record's "prenom" value
  * @method string              getLogin()          Returns the current record's "login" value
- * @method string              getNumInsa()        Returns the current record's "num_insa" value
+ * @method string              getRepasWith()      Returns the current record's "repas_with" value
  * @method enum                getPayeWith()       Returns the current record's "paye_with" value
  * @method string              getBanqueNom()      Returns the current record's "banque_nom" value
  * @method timestamp           getValidatedAt()    Returns the current record's "validated_at" value
@@ -32,7 +32,7 @@
  * @method Reservation         setNom()            Sets the current record's "nom" value
  * @method Reservation         setPrenom()         Sets the current record's "prenom" value
  * @method Reservation         setLogin()          Sets the current record's "login" value
- * @method Reservation         setNumInsa()        Sets the current record's "num_insa" value
+ * @method Reservation         setRepasWith()      Sets the current record's "repas_with" value
  * @method Reservation         setPayeWith()       Sets the current record's "paye_with" value
  * @method Reservation         setBanqueNom()      Sets the current record's "banque_nom" value
  * @method Reservation         setValidatedAt()    Sets the current record's "validated_at" value
@@ -66,9 +66,9 @@ abstract class BaseReservation extends sfDoctrineRecord
              'type' => 'string',
              'length' => 20,
              ));
-        $this->hasColumn('num_insa', 'string', 7, array(
+        $this->hasColumn('repas_with', 'string', 256, array(
              'type' => 'string',
-             'length' => 7,
+             'length' => 256,
              ));
         $this->hasColumn('paye_with', 'enum', null, array(
              'type' => 'enum',
