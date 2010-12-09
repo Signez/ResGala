@@ -3,6 +3,7 @@ Reservation:
     id: 
       type: integer
       primary: true
+      autoincrement: true
     nom: string(30)
     prenom: string(20)
     login: string(20)
@@ -53,6 +54,7 @@ Produit:
     id:
       type: integer
       primary: true
+      autoincrement: true
     intitule:  string(20)
     description: string(200)
     prix: 
