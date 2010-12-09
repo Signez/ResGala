@@ -115,7 +115,7 @@ class reswizardActions extends sfActions
     $reservation->setDateTimeObject("validated_at", new DateTime());
     $reservation->save();
 
-    foreach($this->getUser()->hasAttribute("currentCommande") as $produit_id => $qte){
+    foreach($this->getUser()->getAttribute("currentCommande") as $produit_id => $qte){
       $ligne = new LigneCommande();
       $ligne->setReservation($reservation);
       $ligne->setProduitId($produit_id);
