@@ -16,21 +16,22 @@ class ReservationForm extends BaseReservationForm
     $this->getWidgetSchema()->addFormFormatter('deflist', $custom_decorator);
     $this->getWidgetSchema()->setFormFormatterName('deflist');
     
-    $this->useFields(array("nom", "prenom", "login", "paye_with", "banque_nom"));
+    $this->useFields(array("nom", "prenom", "login", "paye_with", "banque_nom", "repas_with"));
     $this->widgetSchema->setLabels(array(
                       "nom" => "Votre nom :",
                       "prenom" => "Votre prénom :",
                       "login" => "Votre login INSA :",
-                      "num_insa" => "Votre numéro d'étudiant INSA :",
-                      "banque_nom" => "Le nom de la banque inscrit sur le chèque (le cas échéant) :"
+                      "banque_nom" => "Le nom de la banque inscrit sur le chèque (le cas échéant) :",
+                      "repas_with" => "Les noms et prénoms des autres étudiants et diplômés avec qui vous souhaitez manger :"
                      ));
     $this->widgetSchema->setHelps(array(
                       "nom" => "Ce nom vous sera notamment demandé lors du paiement ou du retrait de votre réservation.",
                       "login" => "Cet identifiant vous sera demandé lors du paiement ou du retrait de votre réservation.",
-                      "num_insa" => "Ce numéro à sept chiffres se trouve sur votre
-                                    Carte d'Étudiant Multi-Service, situé juste sous votre INE.",
                       "banque_nom" => "Si vous réglez par chèque, indiquez ci-dessus le nom de la banque
-                                       émettrice du chèque."
+                                       émettrice du chèque.",
+                      "repas_with" => "Ce champ optionnel vous permet d'indiquer avec quels autres étudiants et diplômés
+                                       vous souhaitez manger (en dehors de cette réservation). L'équipe d'organisation
+                                       tentera de respecter ces souhaits, sans pouvoir vous le garantir."
                      ));
     $this->validatorSchema["nom"]->setOption("required", true);
     $this->validatorSchema["prenom"]->setOption("required", true);
@@ -65,7 +66,7 @@ class ValidateReservationForm extends ReservationForm
   public function configure()
   {
     parent::configure();
-    $this->useFields(array("paye_with", "banque_nom"));
+    $this->useFields(array("paye_with", "banque_nom", "repas_with"));
     $this->validatorSchema->setPreValidator(
             new sfValidatorOr(array(
                 new sfValidatorSchemaFilter('paye_with', new sfValidatorChoice(array('choices' => array('especes')))),

@@ -7,6 +7,12 @@
 <?php endif; ?>
 <form action="<?php echo url_for("validate_save"); ?>" method="POST">
   <fieldset>
+    <legend>Avec qui d'autre souhaitez vous partager votre repas ?</legend>
+    <p>Si vous souhaitez partager le repas du Gala avec d'autres personnes, indiquez leurs noms et prénoms ci-dessous
+    pour que l'équipe d'organisation puisse essayer de vous rassembler.</p>
+    <?php echo $form["repas_with"]->renderRow(array("placeholder" => "Caroline Delajoie, Jérôme Deloin")); ?>
+  </fieldset>
+  <fieldset>
     <legend>Comment comptez-vous régler votre réservation ?</legend>
     <p>Si cette plateforme ne comprends pas de zone de paiement, il est préférable, pour que l'on puisse s'organiser
       convenablement, que vous nous indiquez ci-dessous le moyen de paiement que vous comptez utiliser.</p>

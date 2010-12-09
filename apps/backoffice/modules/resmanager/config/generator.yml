@@ -18,13 +18,12 @@ generator:
       list:
         title:  Liste des réservations
         #layout: stacked
-        display: [id, =prenom, =nom, login, num_insa, paye_with, banque_nom]
+        display: [id, =prenom, =nom, login, paye_with, banque_nom]
         object_actions:
+          _edit: ~
           paye: ~
       filter:
-        display: [prenom, nom, login, num_insa, paye_with, banque_nom]
+        display: [prenom, nom, login, paye_with, banque_nom]
       form:    ~
       edit:
         title:  Modification de la réservation de %%prenom%% %%nom%%
-      new:
-        title:  Nouvelle réservation
