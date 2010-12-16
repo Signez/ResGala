@@ -38,6 +38,7 @@ abstract class BaseProduit extends sfDoctrineRecord
         $this->hasColumn('id', 'integer', null, array(
              'type' => 'integer',
              'primary' => true,
+             'autoincrement' => true,
              ));
         $this->hasColumn('intitule', 'string', 20, array(
              'type' => 'string',

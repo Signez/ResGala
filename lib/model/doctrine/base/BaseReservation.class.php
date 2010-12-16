@@ -53,6 +53,7 @@ abstract class BaseReservation extends sfDoctrineRecord
         $this->hasColumn('id', 'integer', null, array(
              'type' => 'integer',
              'primary' => true,
+             'autoincrement' => true,
              ));
         $this->hasColumn('nom', 'string', 30, array(
              'type' => 'string',
