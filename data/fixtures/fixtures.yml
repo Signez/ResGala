@@ -50,14 +50,14 @@ Produit:
     prix: 30
 
   champagneBouteille:
-    intitule: Bouteille de Champagne
+    intitule: Bouteille Champagne
     description: |
       Une bouteille de champagne, pour repas de Gala inoubliable. Ces bons à échanger contre une bouteille sont également achetable sur
       place.
     prix: 15
 
   champagnePrestige:
-    intitule: Bouteille de Champagne Prestige
+    intitule: Champagne Prestige
     description: |
       Un champagne prestige pour un moment exceptionnel. Ces bons à échanger contre une bouteille sont également achetable sur
       place.
