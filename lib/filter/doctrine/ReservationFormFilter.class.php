@@ -34,6 +34,7 @@ class ReservationFormFilter extends BaseReservationFormFilter
 					'template',
 					'du %from_date% au %to_date%'
 				);
+        $field->setOption("with_empty", false);
 			}
 		}
   }

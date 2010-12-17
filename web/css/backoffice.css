@@ -10,9 +10,95 @@
 #sf_admin_bar {
   float: none;
   overflow: hidden;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+#sf_admin_container #sf_admin_bar .sf_admin_form_row label {
+  display: block;
+  float: none;
+}
+
+#sf_admin_container #sf_admin_bar .sf_admin_form_row {
+  border: 0px;
+  border-right: 1px solid rgba(0,0,0,0.3);
+  padding: 0px 10px 0px 10px;
+}
+
+#sf_admin_container .sf_admin_form_row .help, #sf_admin_container .sf_admin_form_row .content {
+  padding-left: 10em;
+}
+
+#sf_admin_container label {
+  width: 9em;
+}
+
+.sf_admin_list_th_validated_at {
+  width: 80px;
+}
+
+.sf_admin_list table {
+  width: 100%;
 }
 
 .fin_filters {
-  clear: left;
-  float: right;
+  clear: none;
+  float: left;
+  padding: 0px 10px 0px 10px;
+}
+
+.fin_filters input {
+  display: block;
+}
+
+.sf_admin_filter {
+  overflow: hidden;
+}
+
+html, body {
+  background-color: black;
+  background-image: url(../images/fond.png);
+  font-family: "Ubuntu","Trebuchet MS","Lucida Grande",Helvetica,sans-serif;
+  font-size: 10pt;
+}
+
+.allwrap {
+  margin: 3%;
+}
+
+.logowrap {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+h1, h2 {
+  margin: 0px;
+  padding: 0px;
+  line-height: 1.2em;
+  font-weight: normal;
+  font-size: 24pt;
+}
+
+h2 {
+  margin-top: 5px;
+  font-size: 16pt;
+}
+
+h3 {
+  font-size: 18pt;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-weight: normal;
+  color: #FF5400;
+}
+
+.mainwrap {
+  min-height: 200px;
+  background-color: #FCE6B0;
+  margin-top: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 2px black;
+  -moz-box-shadow: 2px 2px 2px black;
+  padding: 30px;
 }

@@ -3,3 +3,7 @@
 
 # default values
 #all:
+.all:
+  .settings:
+    i18n:  true      # Enable interface translation. Set to off if your application should not be translated.
+    default_culture:        fr       # Default user culture

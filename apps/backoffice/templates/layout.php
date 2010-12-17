@@ -9,6 +9,14 @@
     <?php include_javascripts() ?>
   </head>
   <body id="backoffice">
-    <?php echo $sf_content ?>
+    <div class="allwrap">
+      <div class="logowrap">
+        <h1>Interface d'administration</h1>
+        <h2><?php if(has_slot('pagetitle')) echo get_slot('pagetitle'); ?></h2>
+      </div>
+      <div class="mainwrap">
+        <?php echo $sf_content ?>
+      </div>
+    </div>
   </body>
 </html>

@@ -2,3 +2,4 @@ data/sql/*
 data/testsdata.db
 cache/*
 log/*
+config/databases.yml

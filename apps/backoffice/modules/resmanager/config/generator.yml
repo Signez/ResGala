@@ -14,16 +14,39 @@ generator:
     config:
       actions: 
         _new: {}
-      fields:  ~
+        paye:
+          label: Marquer comme payée
+      fields:
+        id:
+          label: "#"
+        prenom:
+          label: Prénom
+        nom:
+          label: Nom
+        login:
+          label: Login INSA
+        paye_with:
+          label: Paiement par
+        banque_nom:
+          label: Nom de la banque
+        repas_with:
+          label: Souhaite manger avec
+        validated_at:
+          label: Réservé le
+          date_format: dd/MM à HH:MM
       list:
         title:  Liste des réservations
         #layout: stacked
-        display: [id, =prenom, =nom, login, paye_with, banque_nom]
+        display: [id, =prenom, =nom, total_formatted, login, paye_with, banque_nom, validated_at]
         object_actions:
           _edit: ~
           paye: ~
+        batch_actions:
+          paye:
+            label: Marqué comme payé
+      show: ~
       filter:
-        display: [prenom, nom, login, paye_with, banque_nom]
+        display: [nom, login, paye_with, banque_nom, validated_at]
       form:    ~
       edit:
         title:  Modification de la réservation de %%prenom%% %%nom%%

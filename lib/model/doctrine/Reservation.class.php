@@ -29,4 +29,16 @@ class Reservation extends BaseReservation
       return true;
     return false;
   }
+
+  public function getTotal(){
+    /*$total = 0;
+    foreach($this->getLigneCommandes() as $id => $lc){
+      $total += $lc->getQuantite() * $lc->getProduit()->getPrix();
+    }
+    return $total;*/
+  }
+
+  public function getTotalFormatted(){
+    return sprintf("%.2f €", $this->getTotal());
+  }
 }
